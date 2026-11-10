@@ -1,6 +1,6 @@
 # Soléo Consultoria Empresarial
 
-> Consultoria para empresas com atendimento presencial em Goiás (sede em Jataí) e no Paraná, e 100% virtual em todo o Brasil, sobre Reforma Tributária, contratos, crédito e formação de preço. Atendimento em três etapas: triagem de 5 minutos, reunião de 50 minutos e parecer personalizado em até 3 dias úteis, sem compromisso e sem custo.
+> Consultoria para empresas com atendimento nacional e internacional, 100% online, em português, inglês e espanhol, sobre Reforma Tributária, contratos, crédito e formação de preço. Atendimento em três etapas: triagem de 5 minutos, reunião de 50 minutos e parecer personalizado em até 3 dias úteis, sem compromisso e sem custo.
 
 ## Páginas
 - [Início](https://www.soleoconsultoria.com.br/): atendimento, soluções, calendário da Reforma Tributária (2026 a 2033), perguntas frequentes e contato.
@@ -10,7 +10,7 @@
 - [Português (Portugal)](https://www.soleoconsultoria.com.br/pt-pt/): mesmo conteúdo em português de Portugal.
 
 ## Contato
-- WhatsApp Goiás: (64) 99227-0765
-- WhatsApp Paraná: (43) 99156-0185
+- WhatsApp: (64) 99227-0765
+- WhatsApp (alternativo): (43) 99156-0185
 - E-mail: marcos@soleoconsultoria.com.br
-- Responsável: Marcos Soléo, Consultor Credenciado Ademicon
+- Responsável: Marcos Soléo, consultor empresarial

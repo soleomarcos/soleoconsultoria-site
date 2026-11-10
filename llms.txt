@@ -5,6 +5,10 @@
 ## Páginas
 - [Início](https://www.soleoconsultoria.com.br/): atendimento, soluções, calendário da Reforma Tributária (2026 a 2033), perguntas frequentes e contato.
 
+- [English](https://www.soleoconsultoria.com.br/en/): same content in English.
+- [Español](https://www.soleoconsultoria.com.br/es/): mismo contenido en español.
+- [Português (Portugal)](https://www.soleoconsultoria.com.br/pt-pt/): mesmo conteúdo em português de Portugal.
+
 ## Contato
 - WhatsApp Goiás: (64) 99227-0765
 - WhatsApp Paraná: (43) 99156-0185

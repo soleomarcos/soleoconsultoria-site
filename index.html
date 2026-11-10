@@ -7,6 +7,11 @@
     <meta name="description" content="Consultoria para empresas em Goiás e no Paraná, presencial ou 100% virtual no Brasil: Reforma Tributária, contratos, crédito e preço. Atendimento sem custo." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.soleoconsultoria.com.br/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/" />
+    <link rel="alternate" hreflang="pt-PT" href="https://www.soleoconsultoria.com.br/pt-pt/" />
+    <link rel="alternate" hreflang="en" href="https://www.soleoconsultoria.com.br/en/" />
+    <link rel="alternate" hreflang="es" href="https://www.soleoconsultoria.com.br/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.soleoconsultoria.com.br/" />
     <link rel="icon" type="image/png" href="https://www.soleoconsultoria.com.br/favicon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
@@ -1386,9 +1391,18 @@
         .tray .btn { padding: 9px 10px; font-size: 13px; }
         header.top .wrap { gap: 8px; }
       }
+    
+      .langbar{background:#0b1220;display:flex;justify-content:flex-end;align-items:center;gap:4px;padding:6px 18px}
+      .langbar a{display:inline-flex;align-items:center;gap:6px;color:#cbd5e1;font:500 12px Inter,system-ui,sans-serif;text-decoration:none;padding:4px 9px;border-radius:999px;border:1px solid transparent}
+      .langbar a:hover{color:#fff;background:rgba(255,255,255,.08)}
+      .langbar a.on{color:#fff;border-color:#d4a73c}
+      .langbar svg{width:22px;height:15px;border-radius:2px;flex:none}
+      @media (max-width:560px){.langbar{justify-content:center;gap:2px;padding:6px 8px}.langbar a{padding:4px 7px}.langbar a span{display:none}.langbar a.on span{display:inline}}
     </style>
   </head>
   <body>
+    <div class="langbar" role="navigation" aria-label="Idioma / Language"><a href="/" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)" class="on" aria-current="true"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#009b3a"/><path d="M15 2.5 27 10 15 17.5 3 10Z" fill="#fedf00"/><circle cx="15" cy="10" r="4.2" fill="#002776"/></svg><span>Brasil</span></a><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT" title="Português (Portugal)"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#e42518"/><rect width="12" height="20" fill="#046a38"/><circle cx="12" cy="10" r="3.6" fill="#ffcc00"/><circle cx="12" cy="10" r="2.1" fill="#fff"/></svg><span>Portugal</span></a><a href="/en/" hreflang="en" lang="en" title="English"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="4"/><path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="1.6"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3.6"/></svg><span>English</span></a><a href="/es/" hreflang="es" lang="es" title="Español"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/></svg><span>Español</span></a></div>
+    
     <header class="top">
       <div class="wrap">
         <a class="brand" href="#inicio"

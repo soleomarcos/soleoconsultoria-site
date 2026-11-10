@@ -1399,6 +1399,18 @@
       .langbar svg{width:22px;height:15px;border-radius:2px;flex:none}
       @media (max-width:560px){.langbar{justify-content:center;gap:2px;padding:6px 8px}.langbar a{padding:4px 7px}.langbar a span{display:none}.langbar a.on span{display:inline}}
     </style>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
+    <script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D');
+      document.addEventListener('click',function(e){
+        var t=e.target,a;
+        if(a=t.closest('a[href*="wa.me"]')){var n=(a.href.match(/wa\.me\/(\d+)/)||[])[1]||'';gtag('event','whatsapp_click',{region:n.indexOf('5543')===0?'PR':'GO',link_text:(a.textContent||'').trim().slice(0,40)});gtag('event','generate_lead',{method:'whatsapp'});return}
+        if(a=t.closest('[data-form]')){gtag('event','form_open',{topic:a.dataset.topic||''});gtag('event','generate_lead',{method:'form'});return}
+        if(a=t.closest('a[href^="mailto:"]')){gtag('event','email_click');gtag('event','generate_lead',{method:'email'});return}
+        if(a=t.closest('.langbar a')){gtag('event','language_switch',{to:a.getAttribute('hreflang')||a.getAttribute('lang')||a.pathname})}
+      },true);
+    </script>
   </head>
   <body>
     <div class="langbar" role="navigation" aria-label="Idioma / Language"><a href="/" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#009b3a"/><path d="M15 2.5 27 10 15 17.5 3 10Z" fill="#fedf00"/><circle cx="15" cy="10" r="4.2" fill="#002776"/></svg><span>Brasil</span></a><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT" title="Português (Portugal)"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#e42518"/><rect width="12" height="20" fill="#046a38"/><circle cx="12" cy="10" r="3.6" fill="#ffcc00"/><circle cx="12" cy="10" r="2.1" fill="#fff"/></svg><span>Portugal</span></a><a href="/en/" hreflang="en" lang="en" title="English" class="on" aria-current="true"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="4"/><path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="1.6"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3.6"/></svg><span>English</span></a><a href="/es/" hreflang="es" lang="es" title="Español"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/></svg><span>Español</span></a></div>

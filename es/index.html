@@ -1390,6 +1390,13 @@
         if(a=t.closest('a[href^="mailto:"]')){gtag('event','email_click');gtag('event','generate_lead',{method:'email'});return}
         if(a=t.closest('.langbar a')){gtag('event','language_switch',{to:a.getAttribute('hreflang')||a.getAttribute('lang')||a.pathname})}
       },true);
+      (function(){if(!('PerformanceObserver' in window))return;var l=0,c=0,i=0,s=0,p=location.pathname;
+function o(t,f,x){try{var q=new PerformanceObserver(function(L){L.getEntries().forEach(f)});q.observe(Object.assign({type:t,buffered:true},x||{}))}catch(e){}}
+o('largest-contentful-paint',function(e){l=e.startTime});
+o('layout-shift',function(e){if(!e.hadRecentInput)c+=e.value});
+o('event',function(e){if(e.interactionId&&e.duration>i)i=e.duration},{durationThreshold:40});
+function f(){if(s)return;s=1;if(l)gtag('event','web_vitals',{metric_name:'LCP',metric_value:Math.round(l),page_path:p,non_interaction:true});gtag('event','web_vitals',{metric_name:'CLS',metric_value:Math.round(c*1000),page_path:p,non_interaction:true});if(i)gtag('event','web_vitals',{metric_name:'INP',metric_value:Math.round(i),page_path:p,non_interaction:true})}
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')f()});addEventListener('pagehide',f)})();
     </script>
   </head>
   <body>
@@ -1723,10 +1730,10 @@
           <p class="eyebrow rv">Guías</p>
           <h2 class="rv">Guías prácticas sobre la Reforma Tributaria de Brasil</h2>
           <p class="sub rv">Artículos directos para empresas sobre CBS, IBS, split payment, precios y contratos (en portugués).</p>
-          <ul class="guias-list"><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-o-que-sao-e-diferencas/" lang="pt-BR">CBS e IBS: o que são, diferenças e o que substituem</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-2026-ano-de-teste/" lang="pt-BR">CBS e IBS em 2026: ano de teste e o que fazer até 2027</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/split-payment-reforma-tributaria-quando-comeca/" lang="pt-BR">Split Payment na Reforma Tributária: quando começa</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/reforma-tributaria-prestadores-de-servicos/" lang="pt-BR">Reforma tributária para prestadores de serviços: o que muda</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/como-precificar-com-cbs-e-ibs/" lang="pt-BR">Como precificar com CBS e IBS: método passo a passo</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/contratos-longo-prazo-reforma-tributaria-clausulas/" lang="pt-BR">Contratos de longo prazo e Reforma Tributária: o que revisar</a></li></ul>
+          <ul class="guias-list"><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-o-que-sao-e-diferencas/" lang="pt-BR">CBS e IBS: o que são, diferenças e o que substituem</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-2026-ano-de-teste/" lang="pt-BR">CBS e IBS em 2026: ano de teste e o que fazer até 2027</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/split-payment-reforma-tributaria-quando-comeca/" lang="pt-BR">Split Payment na Reforma Tributária: quando começa</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/reforma-tributaria-prestadores-de-servicos/" lang="pt-BR">Reforma tributária para prestadores de serviços: o que muda</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/como-precificar-com-cbs-e-ibs/" lang="pt-BR">Como precificar com CBS e IBS: método passo a passo</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/contratos-longo-prazo-reforma-tributaria-clausulas/" lang="pt-BR">Contratos de longo prazo e Reforma Tributária: o que revisar</a></li><li class="guias-tools"><a href="https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/">Simulador de CBS e IBS</a></li><li class="guias-tools"><a href="https://www.soleoconsultoria.com.br/es/consultoria-reforma-tributaria-brasil/">Consultoría sobre la Reforma Tributaria de Brasil</a></li></ul>
           <a class="guias-all" href="https://www.soleoconsultoria.com.br/artigos/" lang="pt-BR">Ver todos los artículos →</a>
         </div>
-        <style>.guias-list{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.guias-list a{display:block;padding:14px 16px;border:1px solid rgba(148,163,184,.35);border-radius:10px;text-decoration:none;color:inherit;font-weight:600;line-height:1.35}.guias-list a:hover{border-color:#d4a73c}.guias-all{display:inline-block;margin-top:18px;font-weight:700}</style>
+        <style>.guias-list{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.guias-list a{display:block;padding:14px 16px;border:1px solid rgba(148,163,184,.35);border-radius:10px;text-decoration:none;color:inherit;font-weight:600;line-height:1.35}.guias-list a:hover{border-color:#d4a73c}.guias-tools a{border-color:#d4a73c}.guias-all{display:inline-block;margin-top:18px;font-weight:700}</style>
       </section>
 
       <section class="alt faq" id="duvidas">
@@ -1863,7 +1870,7 @@
     <footer>
       <div class="wrap">
         <span
-          >© 2026 Soléo Consultoría Empresarial · marcos@soleoconsultoria.com.br · WhatsApp (64) 99227-0765 · WhatsApp (43) 99156-0185 · Atención nacional e internacional, 100% en línea · <a href="#indique" style="color:inherit;text-decoration:underline">Comparta este sitio</a> · <a href="/artigos/" style="color:inherit;text-decoration:underline">Artículos (en portugués)</a></span
+          >© 2026 Soléo Consultoría Empresarial · marcos@soleoconsultoria.com.br · WhatsApp (64) 99227-0765 · WhatsApp (43) 99156-0185 · Atención nacional e internacional, 100% en línea · <a href="#indique" style="color:inherit;text-decoration:underline">Comparta este sitio</a> · <a href="/artigos/" style="color:inherit;text-decoration:underline">Artículos (en portugués)</a> · <a href="/es/simulador-cbs-ibs/" style="color:inherit;text-decoration:underline">Simulador</a> · <a href="/es/consultoria-reforma-tributaria-brasil/" style="color:inherit;text-decoration:underline">Servicio</a></span
         >
       </div>
     </footer>

@@ -15,6 +15,12 @@
 - E-mail: marcos@soleoconsultoria.com.br
 - Responsável: Marcos Soléo, consultor empresarial
 
+## Ferramentas e recursos
+- [Simulador de CBS e IBS](https://www.soleoconsultoria.com.br/simulador-cbs-ibs/): simula tributo sobre vendas, crédito das compras e preço nos cenários de 2026 e 2027. Também em [inglês](https://www.soleoconsultoria.com.br/en/cbs-ibs-simulator/) e [espanhol](https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/).
+- [Glossário da Reforma Tributária](https://www.soleoconsultoria.com.br/glossario-reforma-tributaria/): mais de 30 termos (CBS, IBS, split payment, CST, alíquota de referência, Simples híbrido).
+- [Brazil tax reform consulting for companies](https://www.soleoconsultoria.com.br/en/brazil-tax-reform-consulting/): service page in English.
+- [Consultoría sobre la Reforma Tributaria de Brasil](https://www.soleoconsultoria.com.br/es/consultoria-reforma-tributaria-brasil/): página de servicio en español.
+
 ## Artigos
 - [CBS e IBS: o que são, diferenças e o que substituem](https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-o-que-sao-e-diferencas/): Entenda o que são CBS e IBS, quem administra cada um, quais tributos eles substituem e o que muda na sua empresa. Leia o guia e agende uma triagem.
 - [Alíquota da CBS e do IBS em 2026 e 2027: valores](https://www.soleoconsultoria.com.br/artigos/aliquota-cbs-ibs-2026-2027/): Veja as alíquotas de teste de 2026 (CBS 0,9% e IBS 0,1%), o que muda em 2027 e por que o valor de referência depende do Senado. Leia o guia completo.

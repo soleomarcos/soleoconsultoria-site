@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.soleoconsultoria.com.br/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/" />
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/pt-pt/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/" />
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/en/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/" />
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/es/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/" />
@@ -128,5 +128,54 @@
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.soleoconsultoria.com.br/simulador-cbs-ibs/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/simulador-cbs-ibs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.soleoconsultoria.com.br/en/cbs-ibs-simulator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.soleoconsultoria.com.br/simulador-cbs-ibs/" />
+  </url>
+  <url>
+    <loc>https://www.soleoconsultoria.com.br/en/cbs-ibs-simulator/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/simulador-cbs-ibs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.soleoconsultoria.com.br/en/cbs-ibs-simulator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.soleoconsultoria.com.br/simulador-cbs-ibs/" />
+  </url>
+  <url>
+    <loc>https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.soleoconsultoria.com.br/simulador-cbs-ibs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.soleoconsultoria.com.br/en/cbs-ibs-simulator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.soleoconsultoria.com.br/simulador-cbs-ibs/" />
+  </url>
+  <url>
+    <loc>https://www.soleoconsultoria.com.br/glossario-reforma-tributaria/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.soleoconsultoria.com.br/en/brazil-tax-reform-consulting/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.soleoconsultoria.com.br/es/consultoria-reforma-tributaria-brasil/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

@@ -40,7 +40,10 @@
       "image": "https://www.soleoconsultoria.com.br/og-selo.jpg",
       "description": "Consulting for companies on Brazil’s Tax Reform, contracts, credit and pricing.",
       "email": "marcos@soleoconsultoria.com.br",
-      "telephone": ["+55-64-99227-0765", "+55-43-99156-0185"],
+      "telephone": [
+        "+55-64-99227-0765",
+        "+55-43-99156-0185"
+      ],
       "areaServed": [
         {
           "@type": "Country",
@@ -48,13 +51,19 @@
         },
         "Internacional"
       ],
-      "knowsLanguage": ["pt-BR", "en", "es"],
+      "knowsLanguage": [
+        "pt-BR",
+        "en",
+        "es"
+      ],
       "founder": {
         "@id": "https://www.soleoconsultoria.com.br/#marcos"
       },
       "sameAs": [
         "https://www.linkedin.com/in/soleo-marcos/"
-      ]
+      ],
+      "legalName": "68.804.940 MARCOS ANTONIO GONCALVES SOLEO",
+      "taxID": "68.804.940/0001-77"
     },
     {
       "@type": "Person",
@@ -121,7 +130,7 @@
           "name": "What does the report include?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The company's needs mapped out from the intake and the meeting, the list of possible solutions and the necessary measures, organized by priority. It is delivered within 3 business days after the meeting."
+            "text": "The company's needs mapped out from the intake and the meeting, the list of possible solutions and the necessary measures, organized by priority. It is delivered within 3 business days after the meeting. A sample report (in Portuguese, prepared for a fictitious company) is available at https://www.soleoconsultoria.com.br/exemplo-de-parecer/."
           }
         },
         {
@@ -131,12 +140,20 @@
             "@type": "Answer",
             "text": "Service is national and international, 100% online, in Portuguese, English and Spanish, by Google Meet, phone call or WhatsApp video."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you handle partnerships with financial institutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If we ever refer a product from an institution with which we have a paid commercial partnership, we disclose it in writing before any contract is signed. The decision always rests with the company."
+          }
         }
       ]
     }
   ]
 }
-    </script>
+</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1389,7 +1406,8 @@
       .langbar a.on{color:#fff;border-color:#d4a73c}
       .langbar svg{width:22px;height:15px;border-radius:2px;flex:none}
       @media (max-width:560px){.langbar{justify-content:center;gap:2px;padding:6px 8px}.langbar a{padding:4px 7px}.langbar a span{display:none}.langbar a.on span{display:inline}}
-    </style>
+    .fonte-cal{font-size:14px;color:var(--muted);margin:14px 0 0}.fonte-cal a{color:inherit;text-decoration:underline;text-underline-offset:3px}.legal-id{font-size:13px;color:var(--muted);margin-top:6px}
+</style>
 <style id="ux-fix">
 /* ===== ux-fix 2026-11-11: correções da crítica de design ===== */
 :root{--wa:#1a7a43;--wa-dark:#15693a;--r:4px}
@@ -1506,10 +1524,10 @@ header.top.menu-open .menu-tog span::after{transform:translateY(-6px) rotate(-45
 </style>
 
       <meta name="google-adsense-account" content="ca-pub-5838065593754446">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
+    <script id="ga-guard">(function(){var w=window,n=navigator,u=n.userAgent||"",i=false;try{var q=location.search;if(/[?&]interno=1(&|$)/.test(q))localStorage.setItem("soleo_interno","1");if(/[?&]interno=0(&|$)/.test(q))localStorage.removeItem("soleo_interno");i=localStorage.getItem("soleo_interno")==="1"}catch(e){}w.soleoInterno=i;if(n.webdriver||/HeadlessChrome|Lighthouse|PTST|GTmetrix|bot\b|crawler|spider/i.test(u))w["ga-disable-G-QHY0ERBZ2D"]=true})();</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
     <script>
       window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D');
+      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D',window.soleoInterno?{traffic_type:'internal'}:{});
       document.addEventListener('click',function(e){
         var t=e.target,a;
         if(a=t.closest('a[href*="wa.me"]')){var n=(a.href.match(/wa\.me\/(\d+)/)||[])[1]||'';gtag('event','whatsapp_click',{region:n.indexOf('5543')===0?'PR':'GO',link_text:(a.textContent||'').trim().slice(0,40)});gtag('event','generate_lead',{method:'whatsapp'});return}
@@ -1597,7 +1615,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <p class="eyebrow rv">How the service works</p>
           <h2 class="rv">From diagnosis to report, in three steps</h2>
           <p class="sub rv">
-            You tell us what the company needs, we analyze it in depth and deliver a tailor-made report with the solutions and measures to bring the company up to date with the new rules. All with no obligation and no cost.
+            You tell us what the company needs, we analyze it in depth and deliver a tailor-made report with the solutions and measures to bring the company up to date with the new rules.
           </p>
           <div class="flow">
             <div class="stage rv">
@@ -1636,9 +1654,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
             ><span>Meeting scheduled: <b>within 5 business days</b></span
             ><span>Report: <b>within 3 business days after the meeting</b></span>
           </div>
-          <span class="free rv"
-            >Service with no obligation and no cost for your company.</span
-          >
+          
         </div>
       </section>
 
@@ -1781,6 +1797,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <div class="years" id="years"></div>
           <div class="ybar"><i id="ybar"></i></div>
           <div id="ypanel"></div>
+          <p class="fonte-cal">Sources: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm" target="_blank" rel="noopener">Constitutional Amendment 132/2023</a>, <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">Complementary Law 214/2025</a> and <a href="https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-227-13-janeiro-2026-798657-normaatualizada-pl.pdf" target="_blank" rel="noopener">Complementary Law 227/2026</a> (in Portuguese). Updated on 11/12/2026.</p>
         </div>
       </section>
 
@@ -1847,7 +1864,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
                 target="_blank"
                 rel="noopener"
                 >View full profile on LinkedIn →</a
-              >
+              > · <a href="/sobre/">Full background and education (in Portuguese) →</a>
             </p>
           </div>
         </div>
@@ -1897,8 +1914,11 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <details class="rv">
             <summary>What does the report include?</summary>
             <p>
-              The company's needs mapped out from the intake and the meeting, the list of possible solutions and the necessary measures, organized by priority. It is delivered within 3 business days after the meeting.
-            </p>
+              The company's needs mapped out from the intake and the meeting, the list of possible solutions and the necessary measures, organized by priority. It is delivered within 3 business days after the meeting. See a <a href="/exemplo-de-parecer/">sample report</a> (in Portuguese, prepared for a fictitious company).</p>
+          </details>
+          <details class="rv">
+            <summary>How do you handle partnerships with financial institutions?</summary>
+            <p>If we ever refer a product from an institution with which we have a paid commercial partnership, we disclose it in writing before any contract is signed. The decision always rests with the company.</p>
           </details>
           <details class="rv">
             <summary>Where do you provide service?</summary>
@@ -1918,7 +1938,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
               Tax reform, contracts and credit affect every company. A link sent at the right time can prevent a loss for someone you know.
             </p>
             <div class="why">
-              <div class="rv"><span class="n">1</span><span><b>Whoever receives it gains clarity.</b> Intake, meeting and tailored report, with no obligation and no cost.</span></div>
+              <div class="rv"><span class="n">1</span><span><b>Whoever receives it gains clarity.</b> Intake, meeting and tailored report.</span></div>
               <div class="rv"><span class="n">2</span><span><b>The reform applies to everyone.</b> Suppliers, customers and partners feel the impact together. The more companies are prepared, the safer your chain.</span></div>
               <div class="rv"><span class="n">3</span><span><b>Just one tap.</b> Send by WhatsApp or email with the message already written. Refer partners, accountants, suppliers and fellow business owners.</span></div>
             </div>
@@ -1997,7 +2017,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
 
     <footer>
       <div class="wrap fgrid">
-        <div class="fbrand"><p>© 2026 Soléo Business Consulting</p><p>National and international service, 100% online</p></div>
+        <div class="fbrand"><p>© 2026 Soléo Business Consulting</p><p>National and international service, 100% online</p><p class="legal-id">Soléo Business Consulting is the trade name of 68.804.940 MARCOS ANTONIO GONCALVES SOLEO · CNPJ (Brazilian company ID) 68.804.940/0001-77</p></div>
         <div><h4>Contact</h4><ul><li><a href="mailto:marcos@soleoconsultoria.com.br">marcos@soleoconsultoria.com.br</a></li><li><a href="#" data-wa>WhatsApp (64) 99227-0765</a></li><li><a href="https://wa.me/5543991560185" target="_blank" rel="noopener">WhatsApp (43) 99156-0185</a></li></ul></div>
         <div><h4>Resources</h4><ul><li><a href="#indique">Share this site</a></li><li><a href="/artigos/">Articles (in Portuguese)</a></li><li><a href="/en/cbs-ibs-simulator/">Simulator</a></li><li><a href="/en/brazil-tax-reform-consulting/">Service</a></li><li><a href="/politica-de-privacidade/">Privacy (in Portuguese)</a></li></ul></div>
       </div>
@@ -2020,7 +2040,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     ></a>
 
     <script>
-      const TEMAS = {"trib": {"titulo": "Tax changes", "sub": "Tax Reform in practice", "itens": [["CBS, IBS and Selective Tax: what changes and what ceases to exist", "PIS, Cofins, IPI, ICMS and ISS give way to the dual VAT (federal CBS and state/municipal IBS) and the Selective Tax."], ["2026–2033 timeline and the company’s action plan", "What to do in each year of the transition, from invoices showing the tax in 2026 to the full model in 2033."], ["Destination-based taxation", "The tax becomes due where the customer is, not where the company is located."], ["IBS and CBS credits (non-cumulativity)", "Buying and selling with credit, without tax on tax, and what does or does not generate credit."], ["Split payment and the impact on cash flow", "The tax is separated at the time of payment, before the money reaches the company’s account."], ["Choosing a tax regime: MEI, Simples Nacional, Hybrid Simples or Regular Regime", "Which regime protects margin and keeps the company competitive with customers who take credit."], ["Nano-entrepreneurs and small rural producers", "Who is outside IBS and CBS charges and under what conditions."], ["Reduced rates, specific regimes and cashback", "Sectors with differentiated treatment and tax refunds to consumers."], ["End of tax substitution under IBS and CBS", "What changes for those who today buy and sell goods subject to ICMS-ST."]]}, "leg": {"titulo": "Legislative and regulatory changes", "sub": "Business law applied to daily operations", "itens": [["Adapting customer and supplier contracts to the Tax Reform", "Price, adjustment, tax pass-through and rebalancing clauses for contracts that span the transition."], ["Review of business contracts and risk prevention", "Purchase and sale, services, leases, representation and partnerships reviewed before they become a problem."], ["Tax regulatory: ancillary obligations, inspections and outstanding matters", "Filings, registrations and tax issues organized before an inspection."], ["Labor matters: hiring, outsourcing and liabilities", "Hiring models, routines and prevention of labor liabilities."], ["Commercial matters: sales terms, representation, distribution and consumers", "Commercial policies, sales channels and consumer relations."], ["Corporate: partners, shareholder agreements, amendments and succession", "Company structure, rules among partners and business continuity."], ["Data protection (LGPD) and compliance in the company’s routine", "Customer data and internal rules handled simply and securely."], ["Sales to government: tenders and public contracts", "How to take part in public procurement and fulfill contracts."]]}, "fin": {"titulo": "Business financial consulting", "sub": "Credit, cash and pricing", "itens": [["Working capital: how much, when and which credit line", "Sizing the cash need and choosing the lowest-cost line."], ["Investment credit: machinery, vehicles, real estate and expansion", "Planning the investment and how to pay for it."], ["Pronampe and guaranteed credit lines (FGO)", "Terms, guarantees and when these lines make sense."], ["Financing: total cost comparison across credit lines", "Interest, fees and term: the total cost of each alternative."], ["Debt renegotiation and reorganization", "Replacing expensive debt with a sustainable structure and regaining cash-flow breathing room."], ["Cash flow and financial organization", "Separating accounts, forecasting inflows and outflows and preparing for split payment."], ["Pricing and margin during the tax transition", "Recalculating prices with IBS and CBS without losing margin or customers."], ["New invoice: product and service registration (CST, cClassTrib, NCM/NBS)", "What changes in issuing and registration so sales are not blocked."], ["Financial regulatory: requirements for credit, registration and guarantees", "What banks and administrators require and how to prepare the company."]]}};
+      const TEMAS = {"trib": {"titulo": "Tax changes", "sub": "Tax Reform in practice", "itens": [["CBS, IBS and Selective Tax: what changes and what ceases to exist", "PIS, Cofins, IPI, ICMS and ISS give way to the dual VAT (federal CBS and state/municipal IBS) and the Selective Tax."], ["2026–2033 timeline and the company’s action plan", "What to do in each year of the transition, from invoices showing the tax in 2026 to the full model in 2033."], ["Destination-based taxation", "The tax becomes due where the customer is, not where the company is located."], ["IBS and CBS credits (non-cumulativity)", "Buying and selling with credit, without tax on tax, and what does or does not generate credit."], ["Split payment and the impact on cash flow", "The tax is separated at the time of payment, before the money reaches the company’s account."], ["Choosing a tax regime: MEI, Simples Nacional, Hybrid Simples or Regular Regime", "Which regime protects margin and keeps the company competitive with customers who take credit."], ["Nano-entrepreneurs and small rural producers", "Who is outside IBS and CBS charges and under what conditions."], ["Reduced rates, specific regimes and cashback", "Sectors with differentiated treatment and tax refunds to consumers."], ["End of tax substitution under IBS and CBS", "What changes for those who today buy and sell goods subject to ICMS-ST."]]}, "leg": {"titulo": "Legislative and regulatory changes", "sub": "Business law applied to daily operations", "itens": [["Adapting customer and supplier contracts to the Tax Reform", "Price, adjustment, tax pass-through and rebalancing clauses for contracts that span the transition."], ["Review of business contracts and risk prevention", "Purchase and sale, services, leases, representation and partnerships reviewed before they become a problem."], ["Tax regulatory: ancillary obligations, inspections and outstanding matters", "Filings, registrations and tax issues organized before an inspection."], ["Labor matters: hiring, outsourcing and liabilities", "Hiring models, routines and prevention of labor liabilities."], ["Commercial matters: sales terms, representation, distribution and consumers", "Commercial policies, sales channels and consumer relations."], ["Corporate: partners, shareholder agreements, amendments and succession", "Company structure, rules among partners and business continuity."], ["Data protection (LGPD) and compliance in the company’s routine", "Customer data and internal rules handled simply and securely."], ["Sales to government: tenders and public contracts", "How to take part in public procurement and fulfill contracts."]]}, "fin": {"titulo": "Business financial consulting", "sub": "Credit, cash and pricing", "itens": [["Working capital: how much, when and which credit line", "Sizing the cash need and choosing the lowest-cost line."], ["Investment credit: machinery, vehicles, real estate and expansion", "Planning the investment and how to pay for it."], ["Pronampe and guaranteed credit lines (FGO)", "Terms, guarantees and when these lines make sense."], ["Financing: total cost comparison across credit lines", "Interest, fees and term: the total cost of each alternative."], ["Credit and cash-flow reorganization", "Replacing expensive credit with a sustainable structure and regaining cash-flow breathing room."], ["Cash flow and financial organization", "Separating accounts, forecasting inflows and outflows and preparing for split payment."], ["Pricing and margin during the tax transition", "Recalculating prices with IBS and CBS without losing margin or customers."], ["New invoice: product and service registration (CST, cClassTrib, NCM/NBS)", "What changes in issuing and registration so sales are not blocked."], ["Financial regulatory: requirements for credit, registration and guarantees", "What banks and administrators require and how to prepare the company."]]}};
       const FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfRns5HkIZjllnVz5WgyfQRBNgCBkZIOzKm6rW70FDFR5SPsA/viewform';
       const ENTRY = {trib:'1020240156', leg:'1748931268', fin:'920110614'};
       const WA = '5564992270765';
@@ -2074,7 +2094,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
       // calendário
       const YEARS=[
        ['2026','Test year',['Invoices begin to show CBS (0.9%) and IBS (0.1%) on a trial basis.','New invoice fields: CST, cClassTrib, NCM and NBS.','September: option window between Simples Nacional and the regular IBS and CBS regime for 2027.','Time to review contracts, prices and registrations.']],
-       ['2027','CBS in force',['PIS and Cofins are abolished; CBS starts to be charged.','The Selective Tax begins; IPI is zeroed for most products.','MEI must issue an invoice on all transactions, including to individuals.','April: window to choose between Simples and Hybrid Simples for the second half of the year.']],
+       ['2027','CBS in force',['PIS and Cofins are abolished; CBS starts to be charged.','The Selective Tax begins; IPI is zeroed for most products.','MEI must issue an invoice on all transactions, including to individuals.','March: window to opt into the regular IBS and CBS regime (Hybrid Simples) for the second half of the year.']],
        ['2028','Consolidation',['IBS continues at the 0.1% test rate (0.05% state and 0.05% municipal).','Fine-tuning of prices, credits and cash routines with full CBS.']],
        ['2029–2032','IBS transition',['ICMS and ISS decrease gradually each year.','IBS increases in the same proportion.','Two systems coexist: extra attention to credits and contracts.']],
        ['2033','Full model',['ICMS and ISS cease to exist.','IBS and CBS take full effect.','Destination-based taxation fully applied.']]
@@ -2095,7 +2115,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
        ['Calculating the sale price','We rebuild pricing with the new taxes and credits, protecting the margin.'],
        ['Issuing invoices','We guide the registration of products and services and the new invoice fields.'],
        ['Knowing if I am in the right regime','We compare MEI, Simples, Hybrid Simples and the Regular Regime for your customer profile.'],
-       ['Debts or outstanding issues','We organize outstanding issues and assess renegotiation and financial reorganization.'],
+       ['Outstanding financial and tax issues','We organize outstanding issues and assess how to reorganize credit and cash flow.'],
        ['Lack of time','You receive the finished report, with measures by priority, so you can decide quickly.']
       ];
       document.getElementById('pains').innerHTML=PAINS.map(([a,b],i)=>`<button class="pain rv${i%3?' d'+(i%3):''}"><span class="in"><span class="fa"><b>${a}</b><small>Tap to see how we help</small></span><span class="ba"><b>How we help</b>${b}</span></span></button>`).join('');
@@ -2103,10 +2123,10 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
 
       // chips
       const CH={
-       sit:['MEI','Micro or small company under Simples Nacional','Presumed Profit or Real Profit','Self-employed without a CNPJ','Planning to open a company'],
+       sit:['MEI','Micro or small company under Simples Nacional','Presumed Profit or Real Profit','Planning to open a company'],
        ramo:['Commerce (retail and wholesale)','Services','Food','Industry and production','Construction','Agribusiness and livestock','Transport and logistics','Beauty, health and wellness','Technology and digital'],
        cli:['End consumers','Other companies (B2B)','Government and public bodies'],
-       mot:['Working capital','Machinery, equipment and vehicles','Property, renovation or expansion','Pay off or renegotiate debts','Escape high interest rates','Denied credit or red tape']
+       mot:['Working capital','Machinery, equipment and vehicles','Property, renovation or expansion','Reorganize current credit','Escape high interest rates','Denied credit or red tape']
       };
       document.querySelectorAll('[data-chips]').forEach(c=>c.innerHTML=CH[c.dataset.chips].map(x=>`<span class="chip">${x}</span>`).join(''));
 
@@ -2133,13 +2153,14 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     
       (function(){
         const SITE='https://www.soleoconsultoria.com.br';
-        const msg='Hello! Check out the Soléo Business Consulting website: tax reform, contracts and credit for companies, with personalized service, no obligation and no cost. Worth a visit: '+SITE;
+        const msg=u=>'Hello! Check out the Soléo Business Consulting website: tax reform, contracts and credit for companies, with personalized service, no obligation and no cost. Worth a visit: '+u;
+        const LNK=s=>SITE+location.pathname+'?utm_source='+s+'&utm_medium=indicacao&utm_campaign=compartilhe';
         const $=id=>document.getElementById(id);
-        $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg);
-        $('shMail').href='mailto:?subject='+encodeURIComponent('Useful site for your company: Soléo Business Consulting')+'&body='+encodeURIComponent(msg);
+        $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg(LNK('whatsapp')));
+        $('shMail').href='mailto:?subject='+encodeURIComponent('Useful site for your company: Soléo Business Consulting')+'&body='+encodeURIComponent(msg(LNK('email')));
         $('shCopy').addEventListener('click',async e=>{e.preventDefault();
-          try{await navigator.clipboard.writeText(SITE);$('shOk').textContent='Link copied. Just paste it into the chat.';}
-          catch(_){$('shOk').textContent=SITE;}});
+          try{await navigator.clipboard.writeText(LNK('link'));$('shOk').textContent='Link copied. Just paste it into the chat.';}
+          catch(_){$('shOk').textContent=LNK('link');}});
       })();
     </script>
   

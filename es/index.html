@@ -1390,6 +1390,121 @@
       .langbar svg{width:22px;height:15px;border-radius:2px;flex:none}
       @media (max-width:560px){.langbar{justify-content:center;gap:2px;padding:6px 8px}.langbar a{padding:4px 7px}.langbar a span{display:none}.langbar a.on span{display:inline}}
     </style>
+<style id="ux-fix">
+/* ===== ux-fix 2026-11-11: correções da crítica de design ===== */
+:root{--wa:#1a7a43;--wa-dark:#15693a;--r:4px}
+
+/* 1. Movimento: reveal curto, conteúdo nunca some */
+.rv{opacity:.6;transform:translateY(12px);transition:opacity .35s ease,transform .35s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}
+.rot{min-width:0}
+
+/* 2. Contraste (WCAG AA) */
+.stage.par .tag,.stage.par .unit{color:var(--gold)}
+section.dark .contract .eyebrow,.contract .eyebrow{color:var(--gold-deep)}
+.free{color:#6b5122}
+.btn.wa{background:var(--wa)}
+.btn.wa:hover{background:var(--wa-dark);box-shadow:0 8px 20px rgba(21,105,58,.3)}
+.fab{background:var(--wa)}
+
+/* 3. Hierarquia de CTA: dourado = primário; WhatsApp = secundário com contorno */
+.hero .btn.wa{background:transparent;color:var(--wa);border:2px solid var(--wa);padding:13px 24px}
+.hero .btn.wa .wa-ico{fill:currentColor}
+.hero .btn.wa:hover{background:var(--wa);color:#fff;box-shadow:none}
+.cta .btn.wa,.tray .btn.wa{background:transparent;color:#fff;border:2px solid #3fbf74}
+.cta .btn.wa{padding:13px 24px}
+.cta .btn.wa:hover,.tray .btn.wa:hover{background:var(--wa);border-color:var(--wa);box-shadow:none}
+
+/* 4. Consistência: um raio (4px) para botões e cartões; tipografia em escala 14/16/18 */
+.btn,.guias-list li a,.share .why div,.sharebox,.contract,.fmt,.front,.pain .fa,.pain .ba{border-radius:var(--r)}
+.sharebox .btn,.tray{border-radius:var(--r)}
+.sub{font-size:18px}
+.stage p,.stage ul,.pain .ba{font-size:16px}
+.track{font-size:14px}
+.pain .fa small,.contact em{font-size:14px}
+.guias-list .guias-tools a{position:relative;padding-top:32px}
+.guias-tools a::before{content:attr(data-tag);position:absolute;top:10px;left:16px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+
+/* 5. Painel da pauta escondido não vaza sombra nem recebe foco */
+.tray{visibility:hidden;transition:transform .35s cubic-bezier(.2,.9,.3,1.2),visibility 0s linear .35s}
+.tray.show{visibility:visible;transition:transform .35s cubic-bezier(.2,.9,.3,1.2),visibility 0s}
+.tray .x{min-width:44px;min-height:44px;font-size:24px}
+
+/* 6. Áreas de toque >= 44px */
+.contact a{display:inline-block;padding:10px 0;min-height:44px}
+.about a,.guias-all{display:inline-block;padding:10px 0}
+footer a{display:inline-block;padding:11px 0;min-height:44px}
+
+/* 7. Rodapé em colunas */
+footer{font-size:14px;padding:36px 0 110px}
+footer .wrap.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;flex-direction:initial}
+footer h4{margin:0 0 8px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:0}
+footer .fbrand p{margin:0 0 4px}
+footer a{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+footer a:hover{color:var(--gold-deep)}
+
+/* 8. Menu: botão hambúrguer + CTA no header em telas <= 980px */
+.menu-tog,.hdr-cta{display:none}
+.menu-tog{width:44px;height:44px;border:1px solid rgba(255,255,255,.25);background:transparent;border-radius:var(--r);color:#fff;cursor:pointer;place-items:center;flex:none;padding:0}
+.menu-tog span,.menu-tog span::before,.menu-tog span::after{display:block;width:20px;height:2px;background:currentColor;position:relative;transition:transform .2s,background .2s}
+.menu-tog span::before,.menu-tog span::after{content:"";position:absolute;left:0}
+.menu-tog span::before{top:-6px}.menu-tog span::after{top:6px}
+header.top.menu-open .menu-tog span{background:transparent}
+header.top.menu-open .menu-tog span::before{transform:translateY(6px) rotate(45deg)}
+header.top.menu-open .menu-tog span::after{transform:translateY(-6px) rotate(-45deg)}
+.hdr-right{display:flex;align-items:center;gap:10px}
+@media (max-width:980px){
+  .menu-tog{display:grid}
+  .hdr-cta{display:inline-flex;margin-left:0}
+  header.top nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--navy);padding:6px 24px 18px;border-bottom:3px solid var(--gold);box-shadow:0 18px 30px rgba(0,0,0,.25);max-height:calc(100vh - 70px);overflow:auto}
+  header.top.menu-open nav{display:flex}
+  header.top nav a.lk{display:block;margin:0;padding:13px 2px;font-size:16px;border-bottom:1px solid rgba(255,255,255,.08)}
+  header.top nav a.lk::after{display:none}
+  header.top nav .btn.small{margin:14px 0 0;justify-content:center;font-size:15px;padding:14px}
+  /* selo do hero sai no mobile/tablet: o brasão já está no header */
+  .hero .portrait{display:none}
+  .hero{padding:48px 0 52px}
+  footer .wrap.fgrid{grid-template-columns:1fr 1fr}
+  footer .fbrand{grid-column:1/-1}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  header.top .wrap{height:60px}
+  .brand{min-width:0;gap:8px}
+  .brand img{width:34px;height:34px}
+  .brand span{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hdr-cta{display:none}
+  .brand{padding:5px 0}
+  .langbar a{min-height:36px;padding:8px 9px}
+  header.top nav{padding:6px 16px 18px}
+  html{scroll-padding-top:72px}
+  .hero h1{font-size:36px}
+  .lead{font-size:18px}
+  .ctas .btn{width:100%;justify-content:center}
+  .fab{width:50px;height:50px;right:14px;bottom:16px}
+  .fab svg{width:26px;height:26px}
+  .tray.show~.fab{bottom:84px}
+  footer .wrap.fgrid{grid-template-columns:1fr}
+  /* nenhum texto corrido abaixo de 14px */
+  .stage .tag,.contact small{font-size:12.5px}
+}
+
+/* 9. Dificuldades: sem depender de hover em telas de toque */
+@media (hover:none){
+  #identifica .sub{display:none}
+  .pain{height:auto;perspective:none;cursor:default}
+  .pain .in{transform:none!important;transform-style:flat}
+  .pain .fa,.pain .ba{position:static;backface-visibility:visible;transform:none}
+  .pain .fa small{display:none}
+  .pain .fa{border-bottom:0}
+}
+
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+</style>
+
       <meta name="google-adsense-account" content="ca-pub-5838065593754446">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
     <script>
@@ -1421,7 +1536,8 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
             >Soléo Consultoría Empresarial</span
           ></a
         >
-        <nav>
+        <div class="hdr-right"><a class="btn small hdr-cta" href="#" data-form>Agendar atención</a><button class="menu-tog" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú" data-open="Abrir menú" data-close="Cerrar menú"><span></span></button></div>
+        <nav id="site-nav">
           <a class="lk" href="#atendimento">Atención</a>
           <a class="lk" href="#solucoes">Soluciones</a>
           <a class="lk" href="#contratos">Contratos</a>
@@ -1431,7 +1547,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <a class="lk" href="#indique">Recomiende</a>
           <a class="lk" href="#contato">Contacto</a>
           <a class="btn small" href="#" data-form>Agendar atención</a>
-        </nav>
+        </nav></div>
       </div>
       <div class="progress" id="prog"></div>
     </header>
@@ -1486,7 +1602,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <div class="flow">
             <div class="stage rv">
               <span class="tag">Etapa 1</span
-              ><span class="num" data-count="5">0</span
+              ><span class="num" data-count="5">5</span
               ><span class="unit">minutos</span>
               <h3>Evaluación inicial</h3>
               <p>
@@ -1495,7 +1611,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
             </div>
             <div class="stage rv d1">
               <span class="tag">Etapa 2</span
-              ><span class="num" data-count="50">0</span
+              ><span class="num" data-count="50">50</span
               ><span class="unit">minutos</span>
               <h3>Reunión</h3>
               <p>
@@ -1504,7 +1620,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
             </div>
             <div class="stage par rv d2">
               <span class="tag">Etapa 3</span
-              ><span class="num" data-count="3">0</span
+              ><span class="num" data-count="3">3</span
               ><span class="unit">días hábiles</span>
               <h3>Informe personalizado</h3>
               <p>Entregado en hasta 3 días hábiles después de la reunión, con:</p>
@@ -1742,7 +1858,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <p class="eyebrow rv">Guías</p>
           <h2 class="rv">Guías prácticas sobre la Reforma Tributaria de Brasil</h2>
           <p class="sub rv">Artículos directos para empresas sobre CBS, IBS, split payment, precios y contratos (en portugués).</p>
-          <ul class="guias-list"><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-o-que-sao-e-diferencas/" lang="pt-BR">CBS e IBS: o que são, diferenças e o que substituem</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-2026-ano-de-teste/" lang="pt-BR">CBS e IBS em 2026: ano de teste e o que fazer até 2027</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/split-payment-reforma-tributaria-quando-comeca/" lang="pt-BR">Split Payment na Reforma Tributária: quando começa</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/reforma-tributaria-prestadores-de-servicos/" lang="pt-BR">Reforma tributária para prestadores de serviços: o que muda</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/como-precificar-com-cbs-e-ibs/" lang="pt-BR">Como precificar com CBS e IBS: método passo a passo</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/contratos-longo-prazo-reforma-tributaria-clausulas/" lang="pt-BR">Contratos de longo prazo e Reforma Tributária: o que revisar</a></li><li class="guias-tools"><a href="https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/">Simulador de CBS e IBS</a></li><li class="guias-tools"><a href="https://www.soleoconsultoria.com.br/es/consultoria-reforma-tributaria-brasil/">Consultoría sobre la Reforma Tributaria de Brasil</a></li></ul>
+          <ul class="guias-list"><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-o-que-sao-e-diferencas/" lang="pt-BR">CBS e IBS: o que são, diferenças e o que substituem</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-2026-ano-de-teste/" lang="pt-BR">CBS e IBS em 2026: ano de teste e o que fazer até 2027</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/split-payment-reforma-tributaria-quando-comeca/" lang="pt-BR">Split Payment na Reforma Tributária: quando começa</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/reforma-tributaria-prestadores-de-servicos/" lang="pt-BR">Reforma tributária para prestadores de serviços: o que muda</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/como-precificar-com-cbs-e-ibs/" lang="pt-BR">Como precificar com CBS e IBS: método passo a passo</a></li><li><a href="https://www.soleoconsultoria.com.br/artigos/contratos-longo-prazo-reforma-tributaria-clausulas/" lang="pt-BR">Contratos de longo prazo e Reforma Tributária: o que revisar</a></li><li class="guias-tools"><a data-tag="Herramienta" href="https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/">Simulador de CBS e IBS</a></li><li class="guias-tools"><a data-tag="Servicio" href="https://www.soleoconsultoria.com.br/es/consultoria-reforma-tributaria-brasil/">Consultoría sobre la Reforma Tributaria de Brasil</a></li></ul>
           <a class="guias-all" href="https://www.soleoconsultoria.com.br/artigos/" lang="pt-BR">Ver todos los artículos →</a>
         </div>
         <style>.guias-list{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.guias-list a{display:block;padding:14px 16px;border:1px solid rgba(148,163,184,.35);border-radius:10px;text-decoration:none;color:inherit;font-weight:600;line-height:1.35}.guias-list a:hover{border-color:#d4a73c}.guias-tools a{border-color:#d4a73c}.guias-all{display:inline-block;margin-top:18px;font-weight:700}</style>
@@ -1880,10 +1996,10 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     </main>
 
     <footer>
-      <div class="wrap">
-        <span
-          >© 2026 Soléo Consultoría Empresarial · marcos@soleoconsultoria.com.br · WhatsApp (64) 99227-0765 · WhatsApp (43) 99156-0185 · Atención nacional e internacional, 100% en línea · <a href="#indique" style="color:inherit;text-decoration:underline">Comparta este sitio</a> · <a href="/artigos/" style="color:inherit;text-decoration:underline">Artículos (en portugués)</a> · <a href="/es/simulador-cbs-ibs/" style="color:inherit;text-decoration:underline">Simulador</a> · <a href="/es/consultoria-reforma-tributaria-brasil/" style="color:inherit;text-decoration:underline">Servicio</a> · <a href="/politica-de-privacidade/" style="color:inherit;text-decoration:underline">Privacidad (en portugués)</a></span
-        >
+      <div class="wrap fgrid">
+        <div class="fbrand"><p>© 2026 Soléo Consultoría Empresarial</p><p>Atención nacional e internacional, 100% en línea</p></div>
+        <div><h4>Contacto</h4><ul><li><a href="mailto:marcos@soleoconsultoria.com.br">marcos@soleoconsultoria.com.br</a></li><li><a href="#" data-wa>WhatsApp (64) 99227-0765</a></li><li><a href="https://wa.me/5543991560185" target="_blank" rel="noopener">WhatsApp (43) 99156-0185</a></li></ul></div>
+        <div><h4>Contenido</h4><ul><li><a href="#indique">Comparta este sitio</a></li><li><a href="/artigos/">Artículos (en portugués)</a></li><li><a href="/es/simulador-cbs-ibs/">Simulador</a></li><li><a href="/es/consultoria-reforma-tributaria-brasil/">Servicio</a></li><li><a href="/politica-de-privacidade/">Privacidad (en portugués)</a></li></ul></div>
       </div>
     </footer>
 
@@ -1997,12 +2113,12 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
       // rotação no título
       const ROT=['os novos tributos','el split payment','los nuevos contratos','la nueva factura','el nuevo precio'];let ri=0;
       const rot=document.getElementById('rot');
-      if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(()=>{ri=(ri+1)%ROT.length;rot.style.opacity=0;setTimeout(()=>{rot.textContent=ROT[ri];rot.style.opacity=1},250)},2600);
+      if(0)setInterval(()=>{ri=(ri+1)%ROT.length;rot.style.opacity=0;setTimeout(()=>{rot.textContent=ROT[ri];rot.style.opacity=1},250)},2600);
       rot.style.transition='opacity .25s';
 
       // reveal + contadores
       const io=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;en.target.classList.add('in');
-        en.target.querySelectorAll('[data-count]').forEach(n=>{const to=+n.dataset.count;let c=0;const st=Math.max(1,Math.round(to/25));const t=setInterval(()=>{c=Math.min(to,c+st);n.textContent=c;if(c>=to)clearInterval(t)},30)});
+        en.target.querySelectorAll('[data-count]').forEach(n=>{const to=+n.dataset.count;let c=0;const st=Math.max(1,Math.round(to/25));n.textContent=to});
         io.unobserve(en.target)}),{threshold:.15});
       document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
@@ -2026,5 +2142,16 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           catch(_){$('shOk').textContent=SITE;}});
       })();
     </script>
-  </body>
+  
+<script id="ux-fix-js">
+(()=>{const hd=document.querySelector('header.top');const tg=hd&&hd.querySelector('.menu-tog');if(!tg)return;
+const nav=hd.querySelector('nav');const L=tg.dataset;
+const set=o=>{hd.classList.toggle('menu-open',o);tg.setAttribute('aria-expanded',o);tg.setAttribute('aria-label',o?L.close:L.open)};
+tg.addEventListener('click',()=>set(!hd.classList.contains('menu-open')));
+nav.addEventListener('click',e=>{if(e.target.closest('a'))set(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&hd.classList.contains('menu-open')){set(false);tg.focus()}});
+document.addEventListener('click',e=>{if(!hd.contains(e.target))set(false)});
+matchMedia('(min-width:981px)').addEventListener('change',m=>{if(m.matches)set(false)});})();
+</script>
+</body>
 </html>

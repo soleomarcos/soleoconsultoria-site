@@ -40,7 +40,10 @@
       "image": "https://www.soleoconsultoria.com.br/og-selo.jpg",
       "description": "Consultoría para empresas sobre la Reforma Tributaria de Brasil, contratos, crédito y fijación de precios.",
       "email": "marcos@soleoconsultoria.com.br",
-      "telephone": ["+55-64-99227-0765", "+55-43-99156-0185"],
+      "telephone": [
+        "+55-64-99227-0765",
+        "+55-43-99156-0185"
+      ],
       "areaServed": [
         {
           "@type": "Country",
@@ -48,13 +51,19 @@
         },
         "Internacional"
       ],
-      "knowsLanguage": ["pt-BR", "en", "es"],
+      "knowsLanguage": [
+        "pt-BR",
+        "en",
+        "es"
+      ],
       "founder": {
         "@id": "https://www.soleoconsultoria.com.br/#marcos"
       },
       "sameAs": [
         "https://www.linkedin.com/in/soleo-marcos/"
-      ]
+      ],
+      "legalName": "68.804.940 MARCOS ANTONIO GONCALVES SOLEO",
+      "taxID": "68.804.940/0001-77"
     },
     {
       "@type": "Person",
@@ -121,7 +130,7 @@
           "name": "¿Qué trae el informe?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Las necesidades de la empresa parametrizadas a partir de la evaluación inicial y de la reunión, el listado de soluciones posibles y las medidas necesarias, organizadas por prioridad. Se entrega en hasta 3 días hábiles después de la reunión."
+            "text": "Las necesidades de la empresa parametrizadas a partir de la evaluación inicial y de la reunión, el listado de soluciones posibles y las medidas necesarias, organizadas por prioridad. Se entrega en hasta 3 días hábiles después de la reunión. Hay un ejemplo de informe (en portugués, elaborado para una empresa ficticia) en https://www.soleoconsultoria.com.br/exemplo-de-parecer/."
           }
         },
         {
@@ -131,12 +140,20 @@
             "@type": "Answer",
             "text": "La atención es nacional e internacional, 100% en línea, en portugués, inglés y español, por Google Meet, llamada o video por WhatsApp."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo manejan las alianzas con instituciones financieras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si en algún caso indicamos un producto de una institución con la que tengamos una alianza comercial remunerada, lo informamos por escrito antes de cualquier contratación. La decisión es siempre de la empresa."
+          }
         }
       ]
     }
   ]
 }
-    </script>
+</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1389,7 +1406,8 @@
       .langbar a.on{color:#fff;border-color:#d4a73c}
       .langbar svg{width:22px;height:15px;border-radius:2px;flex:none}
       @media (max-width:560px){.langbar{justify-content:center;gap:2px;padding:6px 8px}.langbar a{padding:4px 7px}.langbar a span{display:none}.langbar a.on span{display:inline}}
-    </style>
+    .fonte-cal{font-size:14px;color:var(--muted);margin:14px 0 0}.fonte-cal a{color:inherit;text-decoration:underline;text-underline-offset:3px}.legal-id{font-size:13px;color:var(--muted);margin-top:6px}
+</style>
 <style id="ux-fix">
 /* ===== ux-fix 2026-11-11: correções da crítica de design ===== */
 :root{--wa:#1a7a43;--wa-dark:#15693a;--r:4px}
@@ -1506,10 +1524,10 @@ header.top.menu-open .menu-tog span::after{transform:translateY(-6px) rotate(-45
 </style>
 
       <meta name="google-adsense-account" content="ca-pub-5838065593754446">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
+    <script id="ga-guard">(function(){var w=window,n=navigator,u=n.userAgent||"",i=false;try{var q=location.search;if(/[?&]interno=1(&|$)/.test(q))localStorage.setItem("soleo_interno","1");if(/[?&]interno=0(&|$)/.test(q))localStorage.removeItem("soleo_interno");i=localStorage.getItem("soleo_interno")==="1"}catch(e){}w.soleoInterno=i;if(n.webdriver||/HeadlessChrome|Lighthouse|PTST|GTmetrix|bot\b|crawler|spider/i.test(u))w["ga-disable-G-QHY0ERBZ2D"]=true})();</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
     <script>
       window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D');
+      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D',window.soleoInterno?{traffic_type:'internal'}:{});
       document.addEventListener('click',function(e){
         var t=e.target,a;
         if(a=t.closest('a[href*="wa.me"]')){var n=(a.href.match(/wa\.me\/(\d+)/)||[])[1]||'';gtag('event','whatsapp_click',{region:n.indexOf('5543')===0?'PR':'GO',link_text:(a.textContent||'').trim().slice(0,40)});gtag('event','generate_lead',{method:'whatsapp'});return}
@@ -1597,7 +1615,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <p class="eyebrow rv">Cómo funciona la atención</p>
           <h2 class="rv">Del diagnóstico al informe, en tres etapas</h2>
           <p class="sub rv">
-            Usted nos cuenta lo que la empresa necesita, analizamos a fondo y entregamos un informe a medida, con las soluciones y las medidas para poner la empresa al día con las nuevas reglas. Todo sin compromiso y sin costo.
+            Usted nos cuenta lo que la empresa necesita, analizamos a fondo y entregamos un informe a medida, con las soluciones y las medidas para poner la empresa al día con las nuevas reglas.
           </p>
           <div class="flow">
             <div class="stage rv">
@@ -1636,9 +1654,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
             ><span>Reunión agendada: <b>hasta 5 días hábiles</b></span
             ><span>Informe: <b>hasta 3 días hábiles después de la reunión</b></span>
           </div>
-          <span class="free rv"
-            >Atención sin compromiso y sin costo para su empresa.</span
-          >
+          
         </div>
       </section>
 
@@ -1781,6 +1797,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <div class="years" id="years"></div>
           <div class="ybar"><i id="ybar"></i></div>
           <div id="ypanel"></div>
+          <p class="fonte-cal">Fuentes: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm" target="_blank" rel="noopener">Enmienda Constitucional 132/2023</a>, <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">Ley Complementaria 214/2025</a> y <a href="https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-227-13-janeiro-2026-798657-normaatualizada-pl.pdf" target="_blank" rel="noopener">Ley Complementaria 227/2026</a> (en portugués). Actualizado el 12/11/2026.</p>
         </div>
       </section>
 
@@ -1847,7 +1864,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
                 target="_blank"
                 rel="noopener"
                 >Ver perfil completo en LinkedIn →</a
-              >
+              > · <a href="/sobre/">Trayectoria completa y formación (en portugués) →</a>
             </p>
           </div>
         </div>
@@ -1897,8 +1914,11 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <details class="rv">
             <summary>¿Qué trae el informe?</summary>
             <p>
-              Las necesidades de la empresa parametrizadas a partir de la evaluación inicial y de la reunión, el listado de soluciones posibles y las medidas necesarias, organizadas por prioridad. Se entrega en hasta 3 días hábiles después de la reunión.
-            </p>
+              Las necesidades de la empresa parametrizadas a partir de la evaluación inicial y de la reunión, el listado de soluciones posibles y las medidas necesarias, organizadas por prioridad. Se entrega en hasta 3 días hábiles después de la reunión. Vea un <a href="/exemplo-de-parecer/">ejemplo de informe</a> (en portugués, elaborado para una empresa ficticia).</p>
+          </details>
+          <details class="rv">
+            <summary>¿Cómo manejan las alianzas con instituciones financieras?</summary>
+            <p>Si en algún caso indicamos un producto de una institución con la que tengamos una alianza comercial remunerada, lo informamos por escrito antes de cualquier contratación. La decisión es siempre de la empresa.</p>
           </details>
           <details class="rv">
             <summary>¿Dónde atienden?</summary>
@@ -1918,7 +1938,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
               La reforma tributaria, los contratos y el crédito afectan a todas las empresas. Un enlace enviado en el momento justo puede evitar un perjuicio a alguien que usted conoce.
             </p>
             <div class="why">
-              <div class="rv"><span class="n">1</span><span><b>Quien recibe, gana claridad.</b> Atención con evaluación inicial, reunión e informe personalizado, sin compromiso y sin costo.</span></div>
+              <div class="rv"><span class="n">1</span><span><b>Quien recibe, gana claridad.</b> Atención con evaluación inicial, reunión e informe personalizado.</span></div>
               <div class="rv"><span class="n">2</span><span><b>La reforma vale para todos.</b> Proveedores, clientes y socios sienten el impacto juntos. Cuantas más empresas preparadas, más segura su cadena.</span></div>
               <div class="rv"><span class="n">3</span><span><b>Basta un toque.</b> Envíe por WhatsApp o correo con el mensaje ya listo. Recomiende a socios, contadores, proveedores y colegas empresarios.</span></div>
             </div>
@@ -1997,7 +2017,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
 
     <footer>
       <div class="wrap fgrid">
-        <div class="fbrand"><p>© 2026 Soléo Consultoría Empresarial</p><p>Atención nacional e internacional, 100% en línea</p></div>
+        <div class="fbrand"><p>© 2026 Soléo Consultoría Empresarial</p><p>Atención nacional e internacional, 100% en línea</p><p class="legal-id">Soléo Consultoría Empresarial es el nombre comercial de 68.804.940 MARCOS ANTONIO GONCALVES SOLEO · CNPJ (registro de empresa en Brasil) 68.804.940/0001-77</p></div>
         <div><h4>Contacto</h4><ul><li><a href="mailto:marcos@soleoconsultoria.com.br">marcos@soleoconsultoria.com.br</a></li><li><a href="#" data-wa>WhatsApp (64) 99227-0765</a></li><li><a href="https://wa.me/5543991560185" target="_blank" rel="noopener">WhatsApp (43) 99156-0185</a></li></ul></div>
         <div><h4>Contenido</h4><ul><li><a href="#indique">Comparta este sitio</a></li><li><a href="/artigos/">Artículos (en portugués)</a></li><li><a href="/es/simulador-cbs-ibs/">Simulador</a></li><li><a href="/es/consultoria-reforma-tributaria-brasil/">Servicio</a></li><li><a href="/politica-de-privacidade/">Privacidad (en portugués)</a></li></ul></div>
       </div>
@@ -2020,7 +2040,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     ></a>
 
     <script>
-      const TEMAS = {"trib": {"titulo": "Cambios tributarios", "sub": "Reforma Tributaria en la práctica", "itens": [["CBS, IBS e Impuesto Selectivo: qué cambia y qué deja de existir", "PIS, Cofins, IPI, ICMS e ISS dan lugar al IVA dual (CBS federal e IBS estadual y municipal) y al Impuesto Selectivo."], ["Cronograma 2026–2033 y plan de acción de la empresa", "Qué hacer en cada año de la transición, de las facturas con el tributo destacado en 2026 al modelo completo en 2033."], ["Tributación en el destino", "El impuesto pasa a ser debido donde está el cliente, y no donde la empresa está instalada."], ["Créditos de IBS y CBS (no cumulatividad)", "Comprar y vender con crédito, sin impuesto sobre impuesto, y qué genera o no genera crédito."], ["Split payment y el impacto en la caja", "El impuesto se separa en el momento del pago, antes de que el dinero llegue a la cuenta de la empresa."], ["Elección del régimen: MEI, Simples Nacional, Simples Híbrido o Régimen Regular", "Qué régimen protege el margen y mantiene a la empresa competitiva para clientes que toman crédito."], ["Nanoemprendedor y pequeño productor rural", "Quién queda fuera del cobro de IBS y CBS y en qué condiciones."], ["Alícuotas reducidas, regímenes específicos y cashback", "Sectores con tratamiento diferenciado y la devolución de impuesto al consumidor."], ["Fin de la sustitución tributaria en IBS y CBS", "Qué cambia para quien hoy compra y vende mercaderías con ICMS-ST."]]}, "leg": {"titulo": "Cambios legislativos y regulatorios", "sub": "Derecho empresarial aplicado al día a día", "itens": [["Adecuación de contratos con clientes y proveedores a la Reforma Tributaria", "Cláusulas de precio, reajuste, traslado de tributos y reequilibrio para contratos que atraviesan la transición."], ["Revisión de contratos empresariales y prevención de riesgos", "Compraventa, prestación de servicios, alquiler, representación y alianzas revisadas antes de volverse un problema."], ["Regulatorio tributario: obligaciones accesorias, fiscalización y pendientes", "Declaraciones, registros y pendientes fiscales organizados antes de la fiscalización."], ["Cuestiones laborales: contrataciones, tercerización y pasivos", "Formas de contratación, rutinas y prevención de pasivos laborales."], ["Cuestiones comerciales: condiciones de venta, representación, distribución y consumidor", "Políticas comerciales, canales de venta y relación con el consumidor."], ["Societario: socios, acuerdo de socios, modificaciones y sucesión", "Estructura de la empresa, reglas entre socios y continuidad del negocio."], ["LGPD y compliance en la rutina de la empresa", "Datos de clientes y reglas internas tratados de forma simple y segura."], ["Ventas al gobierno: licitaciones y contratos públicos", "Cómo participar en compras públicas y cumplir los contratos."]]}, "fin": {"titulo": "Consultoría financiera empresarial", "sub": "Crédito, caja y precio", "itens": [["Capital de trabajo: cuánto, cuándo y qué línea", "Dimensionar la necesidad de caja y elegir la línea de menor costo."], ["Crédito para inversión: máquinas, vehículos, inmuebles y expansión", "Planificar la inversión y la forma de pagarla."], ["Pronampe y líneas con garantía (FGO)", "Condiciones, garantías y cuándo estas líneas tienen sentido."], ["Financiamiento: comparación de costo total entre líneas", "Intereses, tarifas y plazo: el costo total de cada alternativa."], ["Renegociación y reorganización de deudas", "Cambiar deuda cara por una estructura sostenible y recuperar el aire de la caja."], ["Flujo de caja y organización financiera", "Separar cuentas, prever entradas y salidas y prepararse para el split payment."], ["Fijación de precios y margen en la transición tributaria", "Recalcular precios con IBS y CBS sin perder margen ni clientes."], ["Nueva factura: registro de productos y servicios (CST, cClassTrib, NCM/NBS)", "Qué cambia en la emisión y en el registro para no trabar las ventas."], ["Regulatorio financiero: exigencias para crédito, registro y garantías", "Qué piden bancos y administradoras y cómo preparar a la empresa."]]}};
+      const TEMAS = {"trib": {"titulo": "Cambios tributarios", "sub": "Reforma Tributaria en la práctica", "itens": [["CBS, IBS e Impuesto Selectivo: qué cambia y qué deja de existir", "PIS, Cofins, IPI, ICMS e ISS dan lugar al IVA dual (CBS federal e IBS estadual y municipal) y al Impuesto Selectivo."], ["Cronograma 2026–2033 y plan de acción de la empresa", "Qué hacer en cada año de la transición, de las facturas con el tributo destacado en 2026 al modelo completo en 2033."], ["Tributación en el destino", "El impuesto pasa a ser debido donde está el cliente, y no donde la empresa está instalada."], ["Créditos de IBS y CBS (no cumulatividad)", "Comprar y vender con crédito, sin impuesto sobre impuesto, y qué genera o no genera crédito."], ["Split payment y el impacto en la caja", "El impuesto se separa en el momento del pago, antes de que el dinero llegue a la cuenta de la empresa."], ["Elección del régimen: MEI, Simples Nacional, Simples Híbrido o Régimen Regular", "Qué régimen protege el margen y mantiene a la empresa competitiva para clientes que toman crédito."], ["Nanoemprendedor y pequeño productor rural", "Quién queda fuera del cobro de IBS y CBS y en qué condiciones."], ["Alícuotas reducidas, regímenes específicos y cashback", "Sectores con tratamiento diferenciado y la devolución de impuesto al consumidor."], ["Fin de la sustitución tributaria en IBS y CBS", "Qué cambia para quien hoy compra y vende mercaderías con ICMS-ST."]]}, "leg": {"titulo": "Cambios legislativos y regulatorios", "sub": "Derecho empresarial aplicado al día a día", "itens": [["Adecuación de contratos con clientes y proveedores a la Reforma Tributaria", "Cláusulas de precio, reajuste, traslado de tributos y reequilibrio para contratos que atraviesan la transición."], ["Revisión de contratos empresariales y prevención de riesgos", "Compraventa, prestación de servicios, alquiler, representación y alianzas revisadas antes de volverse un problema."], ["Regulatorio tributario: obligaciones accesorias, fiscalización y pendientes", "Declaraciones, registros y pendientes fiscales organizados antes de la fiscalización."], ["Cuestiones laborales: contrataciones, tercerización y pasivos", "Formas de contratación, rutinas y prevención de pasivos laborales."], ["Cuestiones comerciales: condiciones de venta, representación, distribución y consumidor", "Políticas comerciales, canales de venta y relación con el consumidor."], ["Societario: socios, acuerdo de socios, modificaciones y sucesión", "Estructura de la empresa, reglas entre socios y continuidad del negocio."], ["LGPD y compliance en la rutina de la empresa", "Datos de clientes y reglas internas tratados de forma simple y segura."], ["Ventas al gobierno: licitaciones y contratos públicos", "Cómo participar en compras públicas y cumplir los contratos."]]}, "fin": {"titulo": "Consultoría financiera empresarial", "sub": "Crédito, caja y precio", "itens": [["Capital de trabajo: cuánto, cuándo y qué línea", "Dimensionar la necesidad de caja y elegir la línea de menor costo."], ["Crédito para inversión: máquinas, vehículos, inmuebles y expansión", "Planificar la inversión y la forma de pagarla."], ["Pronampe y líneas con garantía (FGO)", "Condiciones, garantías y cuándo estas líneas tienen sentido."], ["Financiamiento: comparación de costo total entre líneas", "Intereses, tarifas y plazo: el costo total de cada alternativa."], ["Reorganización del crédito y de la caja", "Cambiar crédito caro por una estructura sostenible y recuperar el aire de la caja."], ["Flujo de caja y organización financiera", "Separar cuentas, prever entradas y salidas y prepararse para el split payment."], ["Fijación de precios y margen en la transición tributaria", "Recalcular precios con IBS y CBS sin perder margen ni clientes."], ["Nueva factura: registro de productos y servicios (CST, cClassTrib, NCM/NBS)", "Qué cambia en la emisión y en el registro para no trabar las ventas."], ["Regulatorio financiero: exigencias para crédito, registro y garantías", "Qué piden bancos y administradoras y cómo preparar a la empresa."]]}};
       const FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfRns5HkIZjllnVz5WgyfQRBNgCBkZIOzKm6rW70FDFR5SPsA/viewform';
       const ENTRY = {trib:'1020240156', leg:'1748931268', fin:'920110614'};
       const WA = '5564992270765';
@@ -2074,7 +2094,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
       // calendário
       const YEARS=[
        ['2026','Año de prueba',['Las facturas pasan a destacar CBS (0,9%) e IBS (0,1%) con carácter de prueba.','Nuevos campos en la factura: CST, cClassTrib, NCM y NBS.','Septiembre: ventana de opción entre Simples Nacional y el régimen regular de IBS y CBS para 2027.','Hora de revisar contratos, precios y registros.']],
-       ['2027','CBS en vigor',['PIS y Cofins se extinguen; la CBS pasa a cobrarse.','Comienza el Impuesto Selectivo; el IPI se reduce a cero para la mayor parte de los productos.','El MEI pasa a emitir factura en todas las operaciones, incluso para persona física.','Abril: ventana de elección entre Simples y Simples Híbrido para el 2.º semestre.']],
+       ['2027','CBS en vigor',['PIS y Cofins se extinguen; la CBS pasa a cobrarse.','Comienza el Impuesto Selectivo; el IPI se reduce a cero para la mayor parte de los productos.','El MEI pasa a emitir factura en todas las operaciones, incluso para persona física.','Marzo: ventana de opción por el régimen regular de IBS y CBS (Simples Híbrido) para el 2.º semestre.']],
        ['2028','Consolidación',['El IBS sigue con alícuota de prueba de 0,1% (0,05% estadual y 0,05% municipal).','Ajuste fino de precios, créditos y rutinas de caja con la CBS plena.']],
        ['2029–2032','Transición del IBS',['ICMS e ISS disminuyen gradualmente cada año.','El IBS aumenta en la misma proporción.','Convivencia de dos sistemas: atención redoblada a créditos y contratos.']],
        ['2033','Modelo completo',['ICMS e ISS dejan de existir.','IBS y CBS pasan a regir integralmente.','Tributación en el destino plenamente aplicada.']]
@@ -2095,7 +2115,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
        ['Calcular el precio de venta','Rehacemos la formación de precio con los nuevos tributos y créditos, protegiendo el margen.'],
        ['Emitir factura','Orientamos el registro de productos y servicios y los nuevos campos de la factura.'],
        ['Saber si estoy en el régimen correcto','Comparamos MEI, Simples, Simples Híbrido y Régimen Regular para su perfil de cliente.'],
-       ['Deudas o pendientes','Organizamos pendientes y evaluamos renegociación y reorganización financiera.'],
+       ['Pendientes financieros y fiscales','Organizamos los pendientes y evaluamos la reorganización del crédito y de la caja.'],
        ['Falta de tiempo','Usted recibe el informe listo, con las medidas por prioridad, para decidir rápido.']
       ];
       document.getElementById('pains').innerHTML=PAINS.map(([a,b],i)=>`<button class="pain rv${i%3?' d'+(i%3):''}"><span class="in"><span class="fa"><b>${a}</b><small>Toque para ver cómo ayudamos</small></span><span class="ba"><b>Cómo ayudamos</b>${b}</span></span></button>`).join('');
@@ -2103,10 +2123,10 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
 
       // chips
       const CH={
-       sit:['MEI','Microempresa o EPP en el Simples Nacional','Lucro Presumido o Lucro Real','Autónomo(a) sin CNPJ','Quien piensa abrir una empresa'],
+       sit:['MEI','Microempresa o EPP en el Simples Nacional','Lucro Presumido o Lucro Real','Quien piensa abrir una empresa'],
        ramo:['Comercio (minorista y mayorista)','Servicios','Alimentación','Industria y producción','Construcción civil','Agro y ganadería','Transporte y logística','Belleza, salud y bienestar','Tecnología y digital'],
        cli:['Consumidor final','Otras empresas (B2B)','Gobierno y organismos públicos'],
-       mot:['Capital de trabajo','Máquinas, equipos y vehículos','Inmueble, reforma o expansión','Saldar o renegociar deudas','Huir de los intereses altos','Crédito negado o burocracia']
+       mot:['Capital de trabajo','Máquinas, equipos y vehículos','Inmueble, reforma o expansión','Reorganizar el crédito actual','Huir de los intereses altos','Crédito negado o burocracia']
       };
       document.querySelectorAll('[data-chips]').forEach(c=>c.innerHTML=CH[c.dataset.chips].map(x=>`<span class="chip">${x}</span>`).join(''));
 
@@ -2133,13 +2153,14 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     
       (function(){
         const SITE='https://www.soleoconsultoria.com.br';
-        const msg='¡Hola! Conozca el sitio de Soléo Consultoría Empresarial: reforma tributaria, contratos y crédito para empresas, con atención personalizada, sin compromiso y sin costo. Vale la visita: '+SITE;
+        const msg=u=>'¡Hola! Conozca el sitio de Soléo Consultoría Empresarial: reforma tributaria, contratos y crédito para empresas, con atención personalizada, sin compromiso y sin costo. Vale la visita: '+u;
+        const LNK=s=>SITE+location.pathname+'?utm_source='+s+'&utm_medium=indicacao&utm_campaign=compartilhe';
         const $=id=>document.getElementById(id);
-        $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg);
-        $('shMail').href='mailto:?subject='+encodeURIComponent('Sitio útil para su empresa: Soléo Consultoría Empresarial')+'&body='+encodeURIComponent(msg);
+        $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg(LNK('whatsapp')));
+        $('shMail').href='mailto:?subject='+encodeURIComponent('Sitio útil para su empresa: Soléo Consultoría Empresarial')+'&body='+encodeURIComponent(msg(LNK('email')));
         $('shCopy').addEventListener('click',async e=>{e.preventDefault();
-          try{await navigator.clipboard.writeText(SITE);$('shOk').textContent='Enlace copiado. Solo péguelo en la conversación.';}
-          catch(_){$('shOk').textContent=SITE;}});
+          try{await navigator.clipboard.writeText(LNK('link'));$('shOk').textContent='Enlace copiado. Solo péguelo en la conversación.';}
+          catch(_){$('shOk').textContent=LNK('link');}});
       })();
     </script>
   

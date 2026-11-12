@@ -40,7 +40,10 @@
       "image": "https://www.soleoconsultoria.com.br/og-selo.jpg",
       "description": "Consultoria para empresas sobre Reforma Tributária, contratos, crédito e formação de preço.",
       "email": "marcos@soleoconsultoria.com.br",
-      "telephone": ["+55-64-99227-0765", "+55-43-99156-0185"],
+      "telephone": [
+        "+55-64-99227-0765",
+        "+55-43-99156-0185"
+      ],
       "areaServed": [
         {
           "@type": "Country",
@@ -48,13 +51,19 @@
         },
         "Internacional"
       ],
-      "knowsLanguage": ["pt-BR", "en", "es"],
+      "knowsLanguage": [
+        "pt-BR",
+        "en",
+        "es"
+      ],
       "founder": {
         "@id": "https://www.soleoconsultoria.com.br/#marcos"
       },
       "sameAs": [
         "https://www.linkedin.com/in/soleo-marcos/"
-      ]
+      ],
+      "legalName": "68.804.940 MARCOS ANTONIO GONCALVES SOLEO",
+      "taxID": "68.804.940/0001-77"
     },
     {
       "@type": "Person",
@@ -121,7 +130,7 @@
           "name": "O que vem no parecer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As necessidades da empresa parametrizadas a partir da triagem e da reunião, o rol de soluções possíveis e as medidas necessárias, organizadas por prioridade. Ele é entregue em até 3 dias úteis após a reunião."
+            "text": "As necessidades da empresa parametrizadas a partir da triagem e da reunião, o rol de soluções possíveis e as medidas necessárias, organizadas por prioridade. Ele é entregue em até 3 dias úteis após a reunião. Há um exemplo de parecer, feito para uma empresa fictícia, em https://www.soleoconsultoria.com.br/exemplo-de-parecer/."
           }
         },
         {
@@ -131,12 +140,20 @@
             "@type": "Answer",
             "text": "O atendimento é nacional e internacional, 100% online, em português, inglês e espanhol, por Google Meet, ligação ou vídeo no WhatsApp."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Como vocês tratam parcerias com instituições financeiras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se, em algum caso, indicarmos produto de uma instituição com a qual tenhamos parceria comercial remunerada, isso é informado por escrito antes de qualquer contratação. A decisão é sempre da empresa."
+          }
         }
       ]
     }
   ]
 }
-    </script>
+</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1389,7 +1406,8 @@
       .langbar a.on{color:#fff;border-color:#d4a73c}
       .langbar svg{width:22px;height:15px;border-radius:2px;flex:none}
       @media (max-width:560px){.langbar{justify-content:center;gap:2px;padding:6px 8px}.langbar a{padding:4px 7px}.langbar a span{display:none}.langbar a.on span{display:inline}}
-    </style>
+    .fonte-cal{font-size:14px;color:var(--muted);margin:14px 0 0}.fonte-cal a{color:inherit;text-decoration:underline;text-underline-offset:3px}.legal-id{font-size:13px;color:var(--muted);margin-top:6px}
+</style>
 <style id="ux-fix">
 /* ===== ux-fix 2026-11-11: correções da crítica de design ===== */
 :root{--wa:#1a7a43;--wa-dark:#15693a;--r:4px}
@@ -1506,10 +1524,10 @@ header.top.menu-open .menu-tog span::after{transform:translateY(-6px) rotate(-45
 </style>
 
       <meta name="google-adsense-account" content="ca-pub-5838065593754446">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
+    <script id="ga-guard">(function(){var w=window,n=navigator,u=n.userAgent||"",i=false;try{var q=location.search;if(/[?&]interno=1(&|$)/.test(q))localStorage.setItem("soleo_interno","1");if(/[?&]interno=0(&|$)/.test(q))localStorage.removeItem("soleo_interno");i=localStorage.getItem("soleo_interno")==="1"}catch(e){}w.soleoInterno=i;if(n.webdriver||/HeadlessChrome|Lighthouse|PTST|GTmetrix|bot\b|crawler|spider/i.test(u))w["ga-disable-G-QHY0ERBZ2D"]=true})();</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-QHY0ERBZ2D"></script>
     <script>
       window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D');
+      gtag('js',new Date());gtag('config','G-QHY0ERBZ2D',window.soleoInterno?{traffic_type:'internal'}:{});
       document.addEventListener('click',function(e){
         var t=e.target,a;
         if(a=t.closest('a[href*="wa.me"]')){var n=(a.href.match(/wa\.me\/(\d+)/)||[])[1]||'';gtag('event','whatsapp_click',{region:n.indexOf('5543')===0?'PR':'GO',link_text:(a.textContent||'').trim().slice(0,40)});gtag('event','generate_lead',{method:'whatsapp'});return}
@@ -1600,8 +1618,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <p class="sub rv">
             Você conta o que a empresa precisa, nós analisamos a fundo e
             entregamos um parecer feito sob medida, com as soluções e as medidas
-            para colocar a empresa em dia com as novas regras. Tudo sem
-            compromisso e sem custo.
+            para colocar a empresa em dia com as novas regras.
           </p>
           <div class="flow">
             <div class="stage rv">
@@ -1644,9 +1661,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
             ><span>Reunião agendada: <b>até 5 dias úteis</b></span
             ><span>Parecer: <b>até 3 dias úteis após a reunião</b></span>
           </div>
-          <span class="free rv"
-            >Atendimento sem compromisso e sem custo para a sua empresa.</span
-          >
+          
         </div>
       </section>
 
@@ -1810,6 +1825,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
           <div class="years" id="years"></div>
           <div class="ybar"><i id="ybar"></i></div>
           <div id="ypanel"></div>
+          <p class="fonte-cal">Fontes: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm" target="_blank" rel="noopener">EC 132/2023</a>, <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">LC 214/2025</a> e <a href="https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-227-13-janeiro-2026-798657-normaatualizada-pl.pdf" target="_blank" rel="noopener">LC 227/2026</a>. Atualizado em 12/11/2026. <a href="/artigos/cronograma-reforma-tributaria-2026-2033/">Cronograma completo →</a></p>
         </div>
       </section>
 
@@ -1883,7 +1899,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
                 target="_blank"
                 rel="noopener"
                 >Ver perfil completo no LinkedIn →</a
-              >
+              > · <a href="/sobre/">Trajetória completa e formação →</a>
             </p>
           </div>
         </div>
@@ -1945,8 +1961,11 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
               As necessidades da empresa parametrizadas a partir da triagem e da
               reunião, o rol de soluções possíveis e as medidas necessárias,
               organizadas por prioridade. Ele é entregue em até 3 dias úteis
-              após a reunião.
-            </p>
+              após a reunião. Veja um <a href="/exemplo-de-parecer/">exemplo de parecer</a>, feito para uma empresa fictícia.</p>
+          </details>
+          <details class="rv">
+            <summary>Como vocês tratam parcerias com instituições financeiras?</summary>
+            <p>Se, em algum caso, indicarmos produto de uma instituição com a qual tenhamos parceria comercial remunerada, isso é informado por escrito antes de qualquer contratação. A decisão é sempre da empresa.</p>
           </details>
           <details class="rv">
             <summary>Onde vocês atendem?</summary>
@@ -1968,7 +1987,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
               alguém que você conhece.
             </p>
             <div class="why">
-              <div class="rv"><span class="n">1</span><span><b>Quem recebe, ganha clareza.</b> Atendimento de triagem, reunião e parecer personalizado, sem compromisso e sem custo.</span></div>
+              <div class="rv"><span class="n">1</span><span><b>Quem recebe, ganha clareza.</b> Atendimento de triagem, reunião e parecer personalizado.</span></div>
               <div class="rv"><span class="n">2</span><span><b>A reforma vale para todos.</b> Fornecedores, clientes e parceiros sentem o impacto juntos. Quanto mais empresas preparadas, mais segura a sua cadeia.</span></div>
               <div class="rv"><span class="n">3</span><span><b>Basta um toque.</b> Envie por WhatsApp ou e-mail com a mensagem já pronta. Indique sócios, contadores, fornecedores e colegas empresários.</span></div>
             </div>
@@ -2049,7 +2068,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
 
     <footer>
       <div class="wrap fgrid">
-        <div class="fbrand"><p>© 2026 Soléo Consultoria Empresarial</p><p>Atendimento nacional e internacional, 100% online</p></div>
+        <div class="fbrand"><p>© 2026 Soléo Consultoria Empresarial</p><p>Atendimento nacional e internacional, 100% online</p><p class="legal-id">Soléo Consultoria Empresarial é o nome comercial de 68.804.940 MARCOS ANTONIO GONCALVES SOLEO · CNPJ 68.804.940/0001-77</p></div>
         <div><h4>Contato</h4><ul><li><a href="mailto:marcos@soleoconsultoria.com.br">marcos@soleoconsultoria.com.br</a></li><li><a href="#" data-wa>WhatsApp (64) 99227-0765</a></li><li><a href="https://wa.me/5543991560185" target="_blank" rel="noopener">WhatsApp (43) 99156-0185</a></li></ul></div>
         <div><h4>Conteúdo</h4><ul><li><a href="#indique">Compartilhe este site</a></li><li><a href="/artigos/">Artigos</a></li><li><a href="/simulador-cbs-ibs/">Simulador</a></li><li><a href="/glossario-reforma-tributaria/">Glossário</a></li><li><a href="/politica-de-privacidade/">Privacidade</a></li></ul></div>
       </div>
@@ -2072,7 +2091,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     ></a>
 
     <script>
-      const TEMAS = {"trib": {"titulo": "Mudanças tributárias", "sub": "Reforma Tributária na prática", "itens": [["CBS, IBS e Imposto Seletivo: o que muda e o que deixa de existir", "PIS, Cofins, IPI, ICMS e ISS dão lugar ao IVA dual (CBS federal e IBS estadual e municipal) e ao Imposto Seletivo."], ["Cronograma 2026–2033 e plano de ação da empresa", "O que fazer em cada ano da transição, das notas com destaque em 2026 ao modelo completo em 2033."], ["Tributação no destino", "O imposto passa a ser devido onde está o cliente, e não onde a empresa está instalada."], ["Créditos de IBS e CBS (não cumulatividade)", "Comprar e vender com crédito, sem imposto sobre imposto, e o que gera ou não gera crédito."], ["Split payment e o impacto no caixa", "O imposto é separado no momento do pagamento, antes de o dinheiro chegar à conta da empresa."], ["Escolha do regime: MEI, Simples Nacional, Simples Híbrido ou Regime Regular", "Qual regime protege a margem e mantém a empresa competitiva para clientes que tomam crédito."], ["Nanoempreendedor e pequeno produtor rural", "Quem fica fora da cobrança de IBS e CBS e em que condições."], ["Alíquotas reduzidas, regimes específicos e cashback", "Setores com tratamento diferenciado e a devolução de imposto ao consumidor."], ["Fim da substituição tributária no IBS e na CBS", "O que muda para quem hoje compra e vende mercadorias com ICMS-ST."]]}, "leg": {"titulo": "Mudanças legislativas e regulatórias", "sub": "Direito empresarial aplicado ao dia a dia", "itens": [["Adequação de contratos com clientes e fornecedores à Reforma Tributária", "Cláusulas de preço, reajuste, repasse de tributos e reequilíbrio para contratos que atravessam a transição."], ["Revisão de contratos empresariais e prevenção de riscos", "Compra e venda, prestação de serviços, locação, representação e parcerias revisadas antes de virarem problema."], ["Regulatório tributário: obrigações acessórias, fiscalização e pendências", "Declarações, cadastros e pendências fiscais organizados antes da fiscalização."], ["Questões trabalhistas: contratações, terceirização e passivos", "Formas de contratação, rotinas e prevenção de passivos trabalhistas."], ["Questões comerciais: condições de venda, representação, distribuição e consumidor", "Políticas comerciais, canais de venda e relação com o consumidor."], ["Societário: sócios, acordo de sócios, alterações e sucessão", "Estrutura da empresa, regras entre sócios e continuidade do negócio."], ["LGPD e compliance na rotina da empresa", "Dados de clientes e regras internas tratados de forma simples e segura."], ["Vendas para o governo: licitações e contratos públicos", "Como participar de compras públicas e cumprir os contratos."]]}, "fin": {"titulo": "Consultoria financeira empresarial", "sub": "Crédito, caixa e preço", "itens": [["Capital de giro: quanto, quando e qual linha", "Dimensionar a necessidade de caixa e escolher a linha de menor custo."], ["Crédito para investimento: máquinas, veículos, imóveis e expansão", "Planejar o investimento e a forma de pagar por ele."], ["Pronampe e linhas com garantia (FGO)", "Condições, garantias e quando essas linhas fazem sentido."], ["Financiamento: comparação de custo total entre linhas", "Juros, tarifas e prazo: o custo total de cada alternativa."], ["Renegociação e reorganização de dívidas", "Trocar dívida cara por estrutura sustentável e recuperar o fôlego do caixa."], ["Fluxo de caixa e organização financeira", "Separar contas, prever entradas e saídas e se preparar para o split payment."], ["Precificação e margem na transição tributária", "Recalcular preços com IBS e CBS sem perder margem nem cliente."], ["Nova nota fiscal: cadastro de produtos e serviços (CST, cClassTrib, NCM/NBS)", "O que muda na emissão e no cadastro para não travar vendas."], ["Regulatório financeiro: exigências para crédito, cadastro e garantias", "O que bancos e administradoras pedem e como preparar a empresa."]]}};
+      const TEMAS = {"trib": {"titulo": "Mudanças tributárias", "sub": "Reforma Tributária na prática", "itens": [["CBS, IBS e Imposto Seletivo: o que muda e o que deixa de existir", "PIS, Cofins, IPI, ICMS e ISS dão lugar ao IVA dual (CBS federal e IBS estadual e municipal) e ao Imposto Seletivo."], ["Cronograma 2026–2033 e plano de ação da empresa", "O que fazer em cada ano da transição, das notas com destaque em 2026 ao modelo completo em 2033."], ["Tributação no destino", "O imposto passa a ser devido onde está o cliente, e não onde a empresa está instalada."], ["Créditos de IBS e CBS (não cumulatividade)", "Comprar e vender com crédito, sem imposto sobre imposto, e o que gera ou não gera crédito."], ["Split payment e o impacto no caixa", "O imposto é separado no momento do pagamento, antes de o dinheiro chegar à conta da empresa."], ["Escolha do regime: MEI, Simples Nacional, Simples Híbrido ou Regime Regular", "Qual regime protege a margem e mantém a empresa competitiva para clientes que tomam crédito."], ["Nanoempreendedor e pequeno produtor rural", "Quem fica fora da cobrança de IBS e CBS e em que condições."], ["Alíquotas reduzidas, regimes específicos e cashback", "Setores com tratamento diferenciado e a devolução de imposto ao consumidor."], ["Fim da substituição tributária no IBS e na CBS", "O que muda para quem hoje compra e vende mercadorias com ICMS-ST."]]}, "leg": {"titulo": "Mudanças legislativas e regulatórias", "sub": "Direito empresarial aplicado ao dia a dia", "itens": [["Adequação de contratos com clientes e fornecedores à Reforma Tributária", "Cláusulas de preço, reajuste, repasse de tributos e reequilíbrio para contratos que atravessam a transição."], ["Revisão de contratos empresariais e prevenção de riscos", "Compra e venda, prestação de serviços, locação, representação e parcerias revisadas antes de virarem problema."], ["Regulatório tributário: obrigações acessórias, fiscalização e pendências", "Declarações, cadastros e pendências fiscais organizados antes da fiscalização."], ["Questões trabalhistas: contratações, terceirização e passivos", "Formas de contratação, rotinas e prevenção de passivos trabalhistas."], ["Questões comerciais: condições de venda, representação, distribuição e consumidor", "Políticas comerciais, canais de venda e relação com o consumidor."], ["Societário: sócios, acordo de sócios, alterações e sucessão", "Estrutura da empresa, regras entre sócios e continuidade do negócio."], ["LGPD e compliance na rotina da empresa", "Dados de clientes e regras internas tratados de forma simples e segura."], ["Vendas para o governo: licitações e contratos públicos", "Como participar de compras públicas e cumprir os contratos."]]}, "fin": {"titulo": "Consultoria financeira empresarial", "sub": "Crédito, caixa e preço", "itens": [["Capital de giro: quanto, quando e qual linha", "Dimensionar a necessidade de caixa e escolher a linha de menor custo."], ["Crédito para investimento: máquinas, veículos, imóveis e expansão", "Planejar o investimento e a forma de pagar por ele."], ["Pronampe e linhas com garantia (FGO)", "Condições, garantias e quando essas linhas fazem sentido."], ["Financiamento: comparação de custo total entre linhas", "Juros, tarifas e prazo: o custo total de cada alternativa."], ["Reorganização do crédito e do caixa", "Trocar crédito caro por uma estrutura sustentável e recuperar o fôlego do caixa."], ["Fluxo de caixa e organização financeira", "Separar contas, prever entradas e saídas e se preparar para o split payment."], ["Precificação e margem na transição tributária", "Recalcular preços com IBS e CBS sem perder margem nem cliente."], ["Nova nota fiscal: cadastro de produtos e serviços (CST, cClassTrib, NCM/NBS)", "O que muda na emissão e no cadastro para não travar vendas."], ["Regulatório financeiro: exigências para crédito, cadastro e garantias", "O que bancos e administradoras pedem e como preparar a empresa."]]}};
       const FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfRns5HkIZjllnVz5WgyfQRBNgCBkZIOzKm6rW70FDFR5SPsA/viewform';
       const ENTRY = {trib:'1020240156', leg:'1748931268', fin:'920110614'};
       const WA = '5564992270765';
@@ -2126,7 +2145,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
       // calendário
       const YEARS=[
        ['2026','Ano de teste',['Notas fiscais passam a destacar CBS (0,9%) e IBS (0,1%) em caráter de teste.','Novos campos na nota fiscal: CST, cClassTrib, NCM e NBS.','Setembro: janela de opção entre Simples Nacional e o regime regular de IBS e CBS para 2027.','Hora de revisar contratos, preços e cadastros.']],
-       ['2027','CBS em vigor',['PIS e Cofins são extintos; a CBS passa a ser cobrada.','Começa o Imposto Seletivo; o IPI é zerado para a maior parte dos produtos.','MEI passa a emitir nota fiscal em todas as operações, inclusive para pessoa física.','Abril: janela de escolha entre Simples e Simples Híbrido para o 2º semestre.']],
+       ['2027','CBS em vigor',['PIS e Cofins são extintos; a CBS passa a ser cobrada.','Começa o Imposto Seletivo; o IPI é zerado para a maior parte dos produtos.','MEI passa a emitir nota fiscal em todas as operações, inclusive para pessoa física.','Março: janela de opção pelo regime regular de IBS e CBS (Simples Híbrido) para o 2º semestre.']],
        ['2028','Consolidação',['IBS segue com alíquota de teste de 0,1% (0,05% estadual e 0,05% municipal).','Ajuste fino de preços, créditos e rotinas de caixa com a CBS plena.']],
        ['2029–2032','Transição do IBS',['ICMS e ISS diminuem gradualmente a cada ano.','O IBS aumenta na mesma proporção.','Convivência de dois sistemas: atenção redobrada a créditos e contratos.']],
        ['2033','Modelo completo',['ICMS e ISS deixam de existir.','IBS e CBS passam a vigorar integralmente.','Tributação no destino plenamente aplicada.']]
@@ -2147,7 +2166,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
        ['Calcular o preço de venda','Refazemos a formação de preço com os novos tributos e créditos, protegendo a margem.'],
        ['Emitir nota fiscal','Orientamos o cadastro de produtos e serviços e os novos campos da nota.'],
        ['Saber se estou no regime certo','Comparamos MEI, Simples, Simples Híbrido e Regime Regular para o seu perfil de cliente.'],
-       ['Dívidas ou pendências','Organizamos pendências e avaliamos renegociação e reorganização financeira.'],
+       ['Pendências financeiras e fiscais','Organizamos as pendências e avaliamos a reorganização do crédito e do caixa.'],
        ['Falta de tempo','Você recebe o parecer pronto, com as medidas por prioridade, para decidir rápido.']
       ];
       document.getElementById('pains').innerHTML=PAINS.map(([a,b],i)=>`<button class="pain rv${i%3?' d'+(i%3):''}"><span class="in"><span class="fa"><b>${a}</b><small>Toque para ver como ajudamos</small></span><span class="ba"><b>Como ajudamos</b>${b}</span></span></button>`).join('');
@@ -2155,10 +2174,10 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
 
       // chips
       const CH={
-       sit:['MEI','Microempresa ou EPP no Simples Nacional','Lucro Presumido ou Lucro Real','Autônomo(a) sem CNPJ','Quem pretende abrir empresa'],
+       sit:['MEI','Microempresa ou EPP no Simples Nacional','Lucro Presumido ou Lucro Real','Quem pretende abrir empresa'],
        ramo:['Comércio (varejo e atacado)','Serviços','Alimentação','Indústria e produção','Construção civil','Agro e pecuária','Transporte e logística','Beleza, saúde e bem-estar','Tecnologia e digital'],
        cli:['Consumidor final','Outras empresas (B2B)','Governo e órgãos públicos'],
-       mot:['Capital de giro','Máquinas, equipamentos e veículos','Imóvel, reforma ou expansão','Quitar ou renegociar dívidas','Fugir dos juros altos','Crédito negado ou burocracia']
+       mot:['Capital de giro','Máquinas, equipamentos e veículos','Imóvel, reforma ou expansão','Reorganizar o crédito atual','Fugir dos juros altos','Crédito negado ou burocracia']
       };
       document.querySelectorAll('[data-chips]').forEach(c=>c.innerHTML=CH[c.dataset.chips].map(x=>`<span class="chip">${x}</span>`).join(''));
 
@@ -2185,13 +2204,14 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
     
       (function(){
         const SITE='https://www.soleoconsultoria.com.br';
-        const msg='Olá! Conheça o site da Soléo Consultoria Empresarial: reforma tributária, contratos e crédito para empresas, com atendimento personalizado, sem compromisso e sem custo. Vale a visita: '+SITE;
+        const msg=u=>'Olá! Conheça o site da Soléo Consultoria Empresarial: reforma tributária, contratos e crédito para empresas, com atendimento personalizado, sem compromisso e sem custo. Vale a visita: '+u;
+        const LNK=s=>SITE+location.pathname+'?utm_source='+s+'&utm_medium=indicacao&utm_campaign=compartilhe';
         const $=id=>document.getElementById(id);
-        $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg);
-        $('shMail').href='mailto:?subject='+encodeURIComponent('Site útil para a sua empresa: Soléo Consultoria Empresarial')+'&body='+encodeURIComponent(msg);
+        $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg(LNK('whatsapp')));
+        $('shMail').href='mailto:?subject='+encodeURIComponent('Site útil para a sua empresa: Soléo Consultoria Empresarial')+'&body='+encodeURIComponent(msg(LNK('email')));
         $('shCopy').addEventListener('click',async e=>{e.preventDefault();
-          try{await navigator.clipboard.writeText(SITE);$('shOk').textContent='Link copiado. É só colar na conversa.';}
-          catch(_){$('shOk').textContent=SITE;}});
+          try{await navigator.clipboard.writeText(LNK('link'));$('shOk').textContent='Link copiado. É só colar na conversa.';}
+          catch(_){$('shOk').textContent=LNK('link');}});
       })();
     </script>
   

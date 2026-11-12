@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.soleoconsultoria.com.br/</loc>
     <lastmod>2026-11-12</lastmod>
@@ -53,78 +53,91 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-o-que-sao-e-diferencas/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/cbs-e-ibs-o-que-sao-e-diferencas.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/aliquota-cbs-ibs-2026-2027/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/aliquota-cbs-ibs-2026-2027.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/split-payment-reforma-tributaria-quando-comeca/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/split-payment-reforma-tributaria-quando-comeca.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/reforma-tributaria-simples-nacional-o-que-muda/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/reforma-tributaria-simples-nacional-o-que-muda.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/cronograma-reforma-tributaria-2026-2033/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/cronograma-reforma-tributaria-2026-2033.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/como-precificar-com-cbs-e-ibs/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/como-precificar-com-cbs-e-ibs.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/contratos-longo-prazo-reforma-tributaria-clausulas/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/contratos-longo-prazo-reforma-tributaria-clausulas.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/credito-de-cbs-e-ibs-como-funciona/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/credito-de-cbs-e-ibs-como-funciona.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/consultoria-reforma-tributaria-para-empresas/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/consultoria-reforma-tributaria-para-empresas.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/financiamento-ou-capital-de-giro-custo-total/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/financiamento-ou-capital-de-giro-custo-total.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-2026-ano-de-teste/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/cbs-e-ibs-2026-ano-de-teste.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/cbs-e-ibs-na-nota-fiscal-campos-cst/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/cbs-e-ibs-na-nota-fiscal-campos-cst.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/artigos/reforma-tributaria-prestadores-de-servicos/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/reforma-tributaria-prestadores-de-servicos.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -139,6 +152,7 @@
 
   <url>
     <loc>https://www.soleoconsultoria.com.br/simulador-cbs-ibs/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/simulador.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -149,6 +163,7 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/en/cbs-ibs-simulator/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/simulador.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -159,6 +174,7 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/es/simulador-cbs-ibs/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/simulador.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -169,18 +185,21 @@
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/glossario-reforma-tributaria/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/glossario.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/en/brazil-tax-reform-consulting/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/servico.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.soleoconsultoria.com.br/es/consultoria-reforma-tributaria-brasil/</loc>
+    <image:image><image:loc>https://www.soleoconsultoria.com.br/img/capas/servico.jpg</image:loc></image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

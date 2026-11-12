@@ -1426,6 +1426,20 @@
 @media(max-width:980px){.gcards{grid-template-columns:repeat(2,minmax(0,1fr))}.gcards li:first-child{grid-column:1/-1}}
 @media(max-width:620px){.gcards{grid-template-columns:1fr}.gcards li:first-child a{flex-direction:column}.gcards li:first-child img{width:100%}.gcards li:first-child b{font-size:24px}.gcards li:first-child .ct{padding:16px 18px 18px}}
 </style>
+<style id="mob-compact">
+/* Home no celular: menos rolagem sem tirar conteúdo */
+@media (max-width:620px){
+  section{padding:48px 0}
+  h2{font-size:28px}
+  .formats,.pains,.reg,.share .why{display:flex!important;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-right:-16px;padding:2px 16px 12px 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .formats::-webkit-scrollbar,.pains::-webkit-scrollbar,.reg::-webkit-scrollbar,.share .why::-webkit-scrollbar{display:none}
+  .formats>*,.pains>*,.reg>*,.share .why>*{flex:0 0 84%;scroll-snap-align:start;margin:0}
+  .gcards li:nth-child(n+5){display:none}
+  .gcards{gap:16px}
+  .share>*,.feature>*,.wrap>*{min-width:0}
+}
+</style>
+
 
 <style id="ux-fix">
 /* ===== ux-fix 2026-11-11: correções da crítica de design ===== */

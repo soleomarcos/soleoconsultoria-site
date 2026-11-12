@@ -2173,7 +2173,7 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
       (function(){
         const SITE='https://www.soleoconsultoria.com.br';
         const msg=u=>'¡Hola! Conozca el sitio de Soléo Consultoría Empresarial: reforma tributaria, contratos y crédito para empresas, con atención personalizada, sin compromiso y sin costo. Vale la visita: '+u;
-        const LNK=s=>SITE+location.pathname+'?utm_source='+s+'&utm_medium=indicacao&utm_campaign=compartilhe';
+        const LNK=s=>{const m={whatsapp:['whatsapp','social'],email:['indicacao','email'],link:['link_copiado','referral']}[s];return SITE+location.pathname+'?utm_source='+m[0]+'&utm_medium='+m[1]+'&utm_campaign=compartilhe'};
         const $=id=>document.getElementById(id);
         $('shWa').href='https://wa.me/?text='+encodeURIComponent(msg(LNK('whatsapp')));
         $('shMail').href='mailto:?subject='+encodeURIComponent('Sitio útil para su empresa: Soléo Consultoría Empresarial')+'&body='+encodeURIComponent(msg(LNK('email')));
@@ -2193,5 +2193,5 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&hd.classList.contai
 document.addEventListener('click',e=>{if(!hd.contains(e.target))set(false)});
 matchMedia('(min-width:981px)').addEventListener('change',m=>{if(m.matches)set(false)});})();
 </script>
-</body>
+<script id="eng-track">(()=>{if(typeof gtag!=='function')return;const sent=new Set();const io=new IntersectionObserver(es=>es.forEach(e=>{const id=e.target.id;if(e.isIntersecting&&!sent.has(id)){sent.add(id);gtag('event','section_view',{section:id});io.unobserve(e.target)}}),{rootMargin:'0px 0px -50% 0px'});document.querySelectorAll('section[id]').forEach(s=>io.observe(s));const mk=[25,50,75];let i=0;addEventListener('scroll',()=>{const d=document.documentElement,p=(scrollY+innerHeight)/d.scrollHeight*100;while(i<mk.length&&p>=mk[i]){gtag('event','scroll_depth',{percent:mk[i]});i++}},{passive:true})})();</script></body>
 </html>

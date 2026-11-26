@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /boletim/email/
 
 Sitemap: https://www.soleoconsultoria.com.br/sitemap.xml

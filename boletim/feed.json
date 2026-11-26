@@ -1,0 +1,30 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Boletim Empresarial Diário",
+ "home_page_url": "https://www.soleoconsultoria.com.br/boletim/",
+ "feed_url": "https://www.soleoconsultoria.com.br/boletim/feed.json",
+ "language": "pt-BR",
+ "authors": [
+  {
+   "name": "Marcos Soléo",
+   "url": "https://www.soleoconsultoria.com.br/sobre/"
+  }
+ ],
+ "items": [
+  {
+   "id": "2026-11-26-escala-5x2-portaria-mte-2041-o-que-muda",
+   "url": "https://www.soleoconsultoria.com.br/boletim/2026-11-26-escala-5x2-portaria-mte-2041-o-que-muda/",
+   "title": "Escala 5x2: o que a Portaria MTE 2.041/2026 exige das empresas até 16 de dezembro",
+   "summary": "Folgas, divisor de horas, horistas, 12x36 e banco de horas: o que a portaria do MTE detalha sobre a escala 5x2 e o checklist para as próximas três semanas.",
+   "date_published": "2026-11-26T07:00:00-03:00",
+   "_soleo": {
+    "data": "2026-11-26",
+    "n": 1,
+    "assunto": "Escala 5x2: checklist até 16/12 + STF, STJ e TST",
+    "preheader": "A portaria do MTE detalhou folgas, divisores e regimes especiais. E mais: três teses do TST e a compensação tributária no STF.",
+    "email_url": "https://www.soleoconsultoria.com.br/boletim/email/2026-11-26-escala-5x2-portaria-mte-2041-o-que-muda.html",
+    "texto_url": "https://www.soleoconsultoria.com.br/boletim/email/2026-11-26-escala-5x2-portaria-mte-2041-o-que-muda.txt"
+   }
+  }
+ ]
+}

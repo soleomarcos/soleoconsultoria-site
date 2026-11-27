@@ -1,0 +1,37 @@
+Boletim Empresarial Diário · Edição nº 2 · 27/11/2026
+
+Vale-refeição e vale-alimentação: o que o Decreto 12.712 exige após a decisão do TRF-1
+
+Em 24/11/2026, o TRF-1 suspendeu a liminar que dispensava as associadas da ABBT de cumprir parte do Decreto nº 12.712/2025, que reformou as regras do Programa de Alimentação do Trabalhador (PAT). Com isso, tetos de taxas, prazo de liquidação de 15 dias e arranjo aberto voltam a valer para as grandes operadoras, e a empresa que concede vale-refeição ou vale-alimentação precisa conferir se o seu contrato está de acordo.
+
+Ler a análise completa: https://www.soleoconsultoria.com.br/boletim/2026-11-27-vale-refeicao-pat-decreto-12712-trf1/
+
+RADAR DOS TRIBUNAIS
+
+[STF] STF valida exigência de indicar o valor de cada pedido em ações trabalhistas
+No julgamento da ADI 6002, o Plenário, com voto vencedor do ministro Cristiano Zanin, manteve o art. 840, §1º, da CLT, que exige o valor de cada pedido na petição inicial. Fora da hipótese de estimativa justificada com elementos concretos, o valor indicado limita a condenação. A Corte afastou, porém, a extinção automática da ação sem valores: o trabalhador deve ter chance de corrigir a petição. Ficaram parcialmente vencidos os ministros Flávio Dino e Edson Fachin.
+Fonte: https://noticias.stf.jus.br/postsnoticias/stf-valida-exigencia-de-indicacao-de-valor-em-acoes-trabalhistas/
+
+[STJ] STJ admite bloqueio via Sisbajud antes da citação por edital em cobrança fiscal
+A 1ª Turma do STJ, no REsp 2.189.427, relatado pelo ministro Paulo Sérgio Domingues, negou recurso da Fazenda Nacional. O colegiado entendeu que, após tentativas frustradas de citação, o juiz pode priorizar a busca e o bloqueio de ativos pelo Sisbajud antes de mandar citar a empresa por edital, sem afastar o edital depois. O caso envolve empresa do setor de combustíveis e veio do TRF-5.
+Fonte: https://www.migalhas.com.br/quentes/469307/stj-admite-bloqueio-via-sisbajud-antes-da-citacao-por-edital-em-execucao-fiscal
+
+[STJ] Quem recebe bens de fundação extinta responde pelos débitos até o valor recebido
+A 2ª Turma do STJ, no REsp 2.041.644, relatado pelo ministro Afrânio Vilela, deu provimento a recurso do Distrito Federal por unanimidade. A entidade que incorporou o patrimônio de uma fundação extinta passa a responder pelas obrigações remanescentes, limitada aos bens recebidos, com base nos arts. 69 e 884 do Código Civil e na boa-fé objetiva. A fase de cumprimento da condenação segue contra a entidade que recebeu os bens.
+Fonte: https://www.migalhas.com.br/quentes/469261/stj-entidade-que-recebe-bens-de-fundacao-extinta-responde-por-dividas
+
+[TRF-1] TRF-1 restabelece regras do PAT para operadoras de vale-refeição e vale-alimentação
+O desembargador federal Alexandre Jorge Fontes Laranjeira suspendeu a liminar da 22ª Vara Federal Cível do DF que dispensava associadas da ABBT de cumprir parte do Decreto nº 12.712/2025. Voltam a valer o arranjo aberto para operadoras com mais de 500 mil trabalhadores, os tetos de taxas e o prazo máximo de 15 dias para o repasse aos estabelecimentos. A suspensão vale até o julgamento final do agravo.
+Fonte: https://www.migalhas.com.br/quentes/469269/trf-1-restabelece-regras-do-vale-alimentacao-e-do-vale-refeicao
+
+[TST] TST restabelece indenização por cobrança de metas inalcançáveis com ranking e ameaça
+A 6ª Turma do TST, no RR-0011381-24.2016.5.03.0070, relatado pelo ministro Fabrício Gonçalves, restabeleceu por unanimidade indenização de R$ 15 mil por danos morais a uma bancária do Santander, que o TRT-3 havia afastado. Para a turma, metas inexequíveis, exposição do desempenho em ranking e pressão sob ameaça de dispensa configuram assédio moral. A decisão também mandou incluir a remuneração variável na base da gratificação de função.
+Fonte: https://www.migalhas.com.br/quentes/469238/tst-santander-indenizara-bancaria-por-cobrar-metas-inalcancaveis
+
+[TRT-2] TRT-2 mantém justa causa de empregado que publicou vídeo obsceno gravado no estoque
+A 11ª Turma do TRT-2, com relatoria do desembargador Ricardo Verta Luduvice, manteve por unanimidade a justa causa de um assistente de loja que publicou vídeo gravado no estoque, durante o expediente, com gestos obscenos. A turma enquadrou a conduta no art. 482 da CLT, afastou a tese de tolerância da gerência e considerou razoáveis os seis dias entre o fato e a dispensa. Não foi exigida advertência prévia, porque a conduta rompeu de imediato a confiança.
+Fonte: https://www.migalhas.com.br/quentes/469222/trt-2-mantem-justa-causa-de-funcionario-que-fez-video-de-funk-em-loja
+
+Marcos Soléo · Consultor empresarial · soleoconsultoria.com.br
+
+Cancelar inscrição: {{DESCADASTRO}}
